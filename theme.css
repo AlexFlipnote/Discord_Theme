@@ -1805,10 +1805,6 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     margin-bottom: 5px;
 }
 
-.friends-online {
-  display: none;
-}
-
 .guilds-wrapper .guild-separator:after {
     position: absolute;
     top: 0;
