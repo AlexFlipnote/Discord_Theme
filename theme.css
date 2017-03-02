@@ -2086,6 +2086,9 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 }
 
 .guilds-wrapper .guilds .guild.selected {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 100ms ease !important;
+    transition: all 100ms ease !important;
     opacity: 1;
 }
 
