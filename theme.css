@@ -2152,10 +2152,6 @@ div.platform-win .ui-tab-bar-item:nth-of-type(21):before {
   margin-bottom: 5px;
 }
 
-.friends-online {
-  display: none;
-}
-
 .guilds-wrapper .guild-separator:after {
   position: absolute;
   top: 0;
