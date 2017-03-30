@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.0.01";
+  content: "Theme version: 1.0.2.03";
 }
 /* GLOBAL */
 :root {
