@@ -400,18 +400,18 @@
 /* DARK */
 
 .emoji-picker .category {
-    color: #98aab6;
+    color: var(--accent);
     font-size: 13px;
 }
 
 .theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-primary); }
-.theme-dark .popout .emoji-picker .header { background-color: var(--dark-primary); }
+.theme-dark .popout .emoji-picker .header { border-bottom: 0px; background-color: var(--dark-primary); }
 .theme-dark .popout .emoji-picker {
   background: var(--dark-primary);
 }
 
 .theme-dark .popout .emoji-picker .scroller,.theme-dark .popout .emoji-picker .sticky-header {
-  background: var(--dark-secondary);
+  background: var(--dark-primary);
 }
 
 .theme-dark .popout .emoji-picker .scroller .emoji-item.selected {
@@ -430,11 +430,15 @@
 
 .theme-dark .popout.no-shadow .emoji-picker {
   background: var(--dark-primary)!important;
-  border: 0px solid #212121;
+  border: 0px;
   margin-right: 14px;	
   margin-bottom: -14px!important;
   border-radius: 0px 0px 0 0!important;
   margin-bottom: -20px;
+}
+
+.emoji-picker .categories {
+    border-top: 0px;
 }
 
 @-webkit-keyframes emoji-picker {
