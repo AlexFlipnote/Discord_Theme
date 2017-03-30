@@ -1,13 +1,13 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.10";
+  content: "Theme version: 1.0.2.12";
 }
 /* GLOBAL */
 :root {
   /*--<var>: <value>*/
-  --notif: mediumpurple;
-  --accent: mediumpurple;
+  --notif: #7A78BD;
+  --accent: #7A78BD;
   --dark-primary: #212121;
   --dark-secondary: #303030;
   --dark-highlight: #181818;
@@ -402,6 +402,10 @@
 .emoji-picker .category {
     color: var(--accent);
     font-size: 13px;
+}
+
+.emoji-picker .categories .item.selected {
+    border-bottom-color: var(--accent);
 }
 
 .theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-primary); }
