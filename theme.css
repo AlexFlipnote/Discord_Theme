@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.06";
+  content: "Theme version: 1.0.2.08";
 }
 /* GLOBAL */
 :root {
@@ -398,6 +398,12 @@
 
 /* Emoji picker */
 /* DARK */
+
+.emoji-picker .category {
+    color: #98aab6;
+    font-size: 13px;
+}
+
 .theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-primary); }
 .theme-dark .popout .emoji-picker .header { background-color: var(--dark-primary); }
 .theme-dark .popout .emoji-picker {
@@ -425,7 +431,7 @@
 .theme-dark .popout.no-shadow .emoji-picker {
   background: var(--dark-primary)!important;
   border: 0px solid #212121;
-  margin-right: 14px;
+  margin-right: 14px;	
   margin-bottom: -14px!important;
   border-radius: 0px 0px 0 0!important;
   margin-bottom: -20px;
