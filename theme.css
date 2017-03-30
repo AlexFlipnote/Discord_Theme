@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.03";
+  content: "Theme version: 1.0.2.06";
 }
 /* GLOBAL */
 :root {
@@ -427,7 +427,7 @@
   border: 0px solid #212121;
   margin-right: 14px;
   margin-bottom: -14px!important;
-  border-radius: 4px 4px 0 0!important;
+  border-radius: 0px 0px 0 0!important;
   margin-bottom: -20px;
 }
 
