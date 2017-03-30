@@ -398,18 +398,18 @@
 
 /* Emoji picker */
 /* DARK */
-.theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-primary); }
-.theme-dark .popout .emoji-picker .header { background-color: var(--dark-primary); }
+.theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-highlight); }
+.theme-dark .popout .emoji-picker .header { background-color: var(--dark-highlight); }
 .theme-dark .popout .emoji-picker {
-  background: var(--dark-primary);
+  background: var(--dark-highlight);
 }
 
 .theme-dark .popout .emoji-picker .scroller,.theme-dark .popout .emoji-picker .sticky-header {
-  background: var(--dark-secondary);
+  background: var(--dark-primary);
 }
 
 .theme-dark .popout .emoji-picker .scroller .emoji-item.selected {
-  background: var(--dark-primary);
+  background: var(--dark-highlight);
 }
 
 .theme-dark .popout .emoji-picker .scroller .emoji-item {
@@ -423,7 +423,7 @@
 }
 
 .theme-dark .popout.no-shadow .emoji-picker {
-  background: var(--dark-primary)!important;
+  background: var(--dark-highlight)!important;
   border: 0px solid #212121;
   margin-right: 14px;
   margin-bottom: -14px!important;
