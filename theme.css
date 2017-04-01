@@ -1698,4 +1698,30 @@
     font-size: 14px;
 }
 
+.upload-drop-modal .bgScale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    background: #7289da;
+}
 /* END: Upload Area */
+
+/* Upload Drop Area */
+
+.upload-drop-modal .bgScale {
+    background: #303030;
+}
+
+.upload-modal-in .upload-drop-modal .instructions, .upload-modal-in .upload-drop-modal .title {
+    color: var(--accent);
+}
+
+.upload-drop-modal .inner {
+    border: 0px;
+}
+
+/* END: Upload Drop Area */
