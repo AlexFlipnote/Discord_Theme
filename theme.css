@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.14";
+  content: "Theme version: 1.0.2.15";
 }
 /* GLOBAL */
 :root {
@@ -1703,6 +1703,10 @@
     font-size: 14px;
 }
 
+/* END: Upload Area */
+
+/* Upload Drop Area */
+
 .upload-drop-modal .bgScale {
     position: absolute;
     top: 0;
@@ -1713,9 +1717,6 @@
     border-radius: 10px;
     background: #7289da;
 }
-/* END: Upload Area */
-
-/* Upload Drop Area */
 
 .upload-drop-modal .bgScale {
     background: #303030;
