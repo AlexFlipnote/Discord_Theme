@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.12";
+  content: "Theme version: 1.0.2.14";
 }
 /* GLOBAL */
 :root {
@@ -1178,9 +1178,10 @@
 /* BOTH */
 .private-channels .channel.selected { background: var(--dark-secondary); }
 .private-channels .channel.selected:before { border-left: 2px solid var(--accent); }
-.private-channels .channel:hover { background: var(--dark-secondary); opacity: .75;}
+.private-channels .channel:hover { background: var(--dark-secondary); opacity: .75; }
 .private-channels { background-color: var(--dark-primary); }
 .private-channels .channel:hover:before { border-left: 2px inset var(--accent); }
+.private-channels .channel.selected .icon-friends { background-color: var(--accent); }
 
 #friends .friends-table {
   margin-top: 0px;
@@ -1197,6 +1198,10 @@
 .theme-dark #friends .friends-header {
   background-color: var(--dark-highlight);
   border: none;
+}
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background-color: var(--accent);
 }
 
 /* LIGHT */
