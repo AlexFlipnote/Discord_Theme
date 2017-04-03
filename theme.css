@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.15";
+  content: "Theme version: 1.0.2.17";
 }
 /* GLOBAL */
 :root {
@@ -1561,9 +1561,8 @@
 .guilds-wrapper .guild.guilds-add:hover:after,
 .guilds-wrapper .guilds .guild a:hover,
 .guilds-wrapper .guilds .guild.selected .guild-inner,
-.guilds-wrapper .guilds .guild.active .guild-inne
-{
-  background-color: var(--accent) !important;
+.guilds-wrapper .guilds .guild.active .guild-inne {
+  background-color: transparent !important;
 }
 
 .guilds-wrapper .guilds .guild.selected {
