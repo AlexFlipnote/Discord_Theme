@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.20";
+  content: "Theme version: 1.0.2.21";
 }
 /* GLOBAL */
 :root {
@@ -1566,7 +1566,7 @@
 }
 
 .guilds-wrapper .guilds .guild.selected {
-    background: rgba(255, 255, 255, 0);
+    background: transparent;
 }
 
 .guilds-wrapper .guilds .guild.selected .guild-inner {
