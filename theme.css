@@ -1561,10 +1561,19 @@
 .guilds-wrapper .guild.guilds-add:hover:after,
 .guilds-wrapper .guilds .guild a:hover,
 .guilds-wrapper .guilds .guild.selected .guild-inner,
-.guilds-wrapper .guilds .guild.active .guild-inner
+.guilds-wrapper .guilds .guild.active .guild-inne
 {
   background-color: var(--accent) !important;
 }
+
+.guilds-wrapper .guilds .guild.selected {
+    background: transparent;
+}
+
+.guilds-wrapper .guilds .guild.selected .guild-inner {
+    background-color: transparent !important;
+}
+
 .guilds-wrapper .guilds .friends-online {
     display: none;
 }
