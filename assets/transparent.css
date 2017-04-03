@@ -59,10 +59,6 @@
     background: rgba(225, 225, 225, 0.2) !important;
 }
 
-.guilds-wrapper .guilds .guild.selected {
-  background: rgba(255, 255, 255, 0.05);
-}
-
 /* Had to rework for the new styles */
 .theme-dark .chat form, .account{
     background-color: rgba(0,0,0,0.0);
