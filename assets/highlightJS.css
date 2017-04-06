@@ -1,0 +1,286 @@
+/* Modified from SpoopySaitama/discord-css, more default customization soon */
+
+@font-face {
+    font-family: firacode;
+    src: url("https://rawgit.com/bollwyvl/firacode-webfont/master/FiraCode-Regular.ttf");
+}
+
+:root{
+    --code-font: firacode;
+    --code-bg: #1D1F21;
+    --code-default: #C5C8C6;
+    --code-keyword: #E061C7;
+    --code-builtin: #999999;
+    --code-literal: #F79768;
+    --code-number: var(--code-literal);
+    --code-regexp: #B34D4D;
+    --code-string: #2497E3;
+    --code-subst: #F5C747;
+    --code-symbol: #04AFBF;
+    --code-class: #E36222;
+    --code-function: #D65656;
+    --code-title: var(--code-function);
+    --code-params: #07CC95;
+	--code-comment: #9E9E9E;
+	--code-doctag: var(--code-comment);
+	--code-meta-keyword: var(--code-comment);
+	--code-meta-string: var(--code-comment);
+	--code-temp-tag: var(--code-comment);
+	--code-temp-var: var(--code-comment);
+	--code-meta: #E36222;
+	--code-name: #D75A64;
+	--code-builtin-name: var(--code-name);
+	--code-attr: #78D69E;
+	--code-variable: var(--code-attr);
+	--code-tag: #49C7F5;
+	--code-bullet: #04AFBF;
+	--code-type: var(--code-bullet);
+	--code-code: #BEBEBE;
+	--code-emphasis: #AEAEAE;
+	--code-link: #DE935F;
+	--code-section: #CC9C0C;
+	--code-quote: #789922;
+	--code-sel-tag: #D75A64;
+	--code-sel-id: #CC3535;
+	--code-attribute: #40C762;
+	--code-sel-pseudo: #40C762;
+	--code-sel-class: #49C7F5;
+	--code-sel-attr: #A25AFA;
+	--code-diff-add: #80C771;
+	--code-diff-del: #C24848;
+}
+
+.hljs {
+  display: block;
+  font-family: var(--code-font), monospace;
+  font-size: 10pt;
+  overflow-y: hidden !important;
+  background: var(--code-bg) !important;
+  color: var(--code-color) !important;
+  padding: 0.5em;
+}
+
+.hljs-emphasis {
+  font-style: italic !important;
+}
+
+.hljs-strong {
+  font-weight: bold !important;
+}
+
+/* HLJS Actual Colors */
+/* Keyword */
+.hljs-keyword {
+  color: var(--code-keyword) !important;
+  font-weight: bold !important;
+}
+
+/* Builtins */
+.hljs-built_in {
+  color: var(--code-builtin) !important;
+}
+
+/* Literal */
+.hljs-literal{
+  color: var(--code-literal) !important;
+}
+
+/* Number */
+.hljs-number{
+    color: var(--code-number) !important;
+}
+
+/* Regex */
+.hljs-regexp {
+  color: var(--code-regexp) !important;
+}
+
+/* String */
+.hljs-string {
+  color: var(--code-string) !important;
+}
+
+/* Subst */
+.hljs-subst {
+  color: var(--code-subst) !important;
+  font-weight: bold !important;
+}
+
+/* Symbol */
+.hljs-symbol {
+  color: var(--code-symbol) !important;
+}
+
+/* Class */
+.hljs-class{}
+  color: var(--code-class) !important;
+}
+
+.hljs-title {
+    color: var(--code-title) !important;
+}
+
+/* Function */
+.hljs-function{
+  color: var(--code-function) !important;
+}
+
+/* Params */
+.hljs-params {
+  color: var(--code-params) !important;
+}
+
+/* Comment */
+.hljs-comment{
+  color: var(--code-comment) !important;
+  font-style: italic !important;
+}
+
+/* Doctag */
+.hljs-doctag {
+  color: var(--code-doctag) !important;
+  font-style: italic !important;
+}
+
+/* Meta Keyword */
+.hljs-meta-keyword {
+  color: var(--code-meta-keyword) !important;
+  font-style: italic !important;
+}
+
+/* Meta String */
+.hljs-meta-string {
+  color: var(--code-meta-string) !important;
+  font-style: italic !important;
+}
+
+/* Template Tag */
+.hljs-template-tag {
+  color: var(--code-temp-tag) !important;
+  font-style: italic !important;
+}
+
+/* Template Variable */
+.hljs-template-variable {
+  color: var(--code-temp-var) !important;
+  font-style: italic !important;
+}
+
+/* Meta */
+.hljs-meta {
+  color: var(--code-meta) !important;
+  font-style: italic !important;
+}
+/* Tag */
+.hljs-tag {
+  color: var(--code-tag) !important;
+}
+
+/* Name Of Tag */
+.hljs-name{
+  color: var(--code-name) !important;
+}
+
+.hljs-builtin-name {
+  color: var(--code-builtin-name) !important;
+}
+
+/* Attr */
+.hljs-attr{
+  color: var(--code-attr) !important;
+}
+
+/* Variable */
+.hljs-variable {
+  color: var(--code-variable) !important;
+}
+
+/* HLJS Markup */
+/* Bullets */
+.hljs-bullet{
+  color: var(--code-bullet) !important;
+  font-weight: bold !important;
+}
+
+/* Type */
+.hljs-type {
+  color: var(--code-type) !important;
+  font-weight: bold !important;
+}
+
+/* Code */
+.hljs-code {
+  color: var(--code-code) !important;
+}
+
+/* Emphasis */
+.hljs-emphasis {
+  font-style: italic !important;
+  color: var(--code-emphasis) !important;
+}
+
+/* Strong */
+.hljs-strong {
+  font-weight: bold !important;
+}
+
+/* Formula */
+
+/* Link */
+.hljs-link {
+  color: var(--code-link) !important;
+}
+
+/* Section */
+.hljs-section {
+  color: var(--code-section) !important;
+  font-weight: bold !important;
+}
+
+/* Quote */
+.hljs-quote {
+  color: var(--code-quote) !important;
+}
+
+/* HLJS CSS */
+
+/* Tag Selector */
+.hljs-selector-tag {
+  color: var(--code-sel-tag) !important;
+}
+
+/* ID Selector */
+.hljs-selector-id {
+  color: var(--code-sel-id) !important;
+  font-weight: bold !important;
+}
+
+/* Attribute */
+.hljs-attribute {
+  color: var(--code-attribute) !important;
+}
+
+/* Psuedo Selector */
+.hljs-selector-pseudo {
+  color: var(--code-sel-pseudo) !important;
+}
+
+/* Class Selector */
+.hljs-selector-class {
+  color: var(--code-sel-class) !important;
+}
+
+/* Attr Selector */
+.hljs-selector-attr {
+  color: var(--code-sel-attr) !important;
+}
+
+/* Diff Addition */
+.hljs-addition {
+  color: var(--code-diff-add) !important;
+}
+
+/* Diff Deletion */
+.hljs-deletion {
+  color: var(--code-diff-del) !important;
+}
