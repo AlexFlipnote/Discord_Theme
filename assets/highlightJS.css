@@ -54,7 +54,7 @@
   font-size: 10pt;
   overflow-y: hidden !important;
   background: var(--code-bg) !important;
-  color: var(--code-color) !important;
+  color: var(--code-default) !important;
   padding: 0.5em;
 }
 
