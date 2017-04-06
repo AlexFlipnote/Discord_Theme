@@ -17,6 +17,23 @@ body {
 }
 ```
 
+### Changing colours
+You can actually change any colours of backgrounds and such by just implementing
+this into your autotheme.css, rgb(a), hex, anything. Enjoy
+```css
+:root {
+  --notif: #7A78BD;
+  --accent: #7A78BD;
+  --dark-primary: #212121;
+  --dark-secondary: #303030;
+  --dark-highlight: #181818;
+  --light-primary: #ddd;
+  --light-secondary: #ecf0f1;
+  --light-highlight: #9E9E9E;
+  --light-dark-text: #2e3136;
+}
+```
+
 ### 2 Guilds/Line (Community made)
 [Click here for preview](https://i.alexflipnote.xyz/0319bqc.png)
 ```css
