@@ -30,6 +30,6 @@ to change stuff, download the theme.css, however if you wish for a theme that up
 
 ![Preview 3](https://i.alexflipnote.xyz/0329wBu.png)
 
-![Preview 4](https://i.alexflipnote.xyz/0329nXH.png)
+![Preview 4](https://i.alexflipnote.xyz/040689j.png)
 
 ![Preview 5](https://i.alexflipnote.xyz/0329mne.png)

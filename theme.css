@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.32";
+  content: "Theme version: 1.0.2.34";
 }
 /* GLOBAL */
 :root {
@@ -376,7 +376,7 @@
 /* END: Keyboard combo */
 
 
-/* Religion */
+/* Region */
 /* BOTH */
 .region-select .region-select-inner, .region-select button { border: none; }
 .region-select:hover button {
@@ -405,7 +405,7 @@
   border: 5px solid #27ae60;
   transition: all 200ms ease;
 }
-/* END: Religion */
+/* END: Region */
 
 
 /* Emoji picker */
@@ -901,6 +901,7 @@
 
 /* Chat Messages */
 /* BOTH */
+.divider.divider-red + .divider { display: none; }
 .chat .jump-to-present-bar { left: inherit; }
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup
 {
