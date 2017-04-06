@@ -54,7 +54,7 @@ code{
 
 .hljs {
   display: block;
-  font-family: var(--code-font), monospace;
+  font-family: var(--code-font), monospace !important;
   font-size: 10pt;
   overflow-y: hidden !important;
   background: var(--code-bg) !important;
