@@ -46,7 +46,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
 ```
 
-### Customize codeblocks
+### [BETA] Customize codeblocks
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/highlightJS.css";
 :root{
@@ -95,7 +95,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 }
 ```
 
-### Small codeblocks
+### [BETA] Small codeblocks
 [Click here for preview](https://cdn.discordapp.com/attachments/298834205180166145/299626124017664000/preview.gif)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/CodeblockHeight.css";
