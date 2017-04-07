@@ -1,35 +1,49 @@
 :root{
-	--status-dnd: "Signifies that you are playing Dungeons and Dragons.";
-	--status-dnd-title: "Dungeons and Dragons";
-	--status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
-	--status-invis-title: "Invisible";
+    --status-online-title: "Online";
+    --status-idle-title: "Idle";
+    --status-dnd: "Signifies that you are playing Dungeons and Dragons.";
+    --status-dnd-title: "Dungeons and Dragons";
+    --status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
+    --status-invis-title: "Invisible";
 }
 
 /* Hide old text */
+.status-online ~ .status-text,
+.status-idle ~ .status-text,
 .status-dnd ~ .status-text,
 .status-invisible ~ .status-text,
 .status-picker .popout-menu-item:nth-child(4) .helper,
 .status-picker .popout-menu-item:nth-child(5) .helper {
-	font-size: 0; 
+    font-size: 0;
 }
 
+/* Online */
+.status-online ~ .status-text::after {
+    content: var(--status-online-title);
+    font-size: 15px;
+}
+/* Idle */
+.status-idle ~ .status-text::after {
+    content: var(--status-idle-title);
+    font-size: 15px;
+}
 /* DnD */
 .status-dnd ~ .status-text::after {
-	content: var(--status-dnd-title);
-	font-size: 15px; 
+    content: var(--status-dnd-title);
+    font-size: 15px;
 }
 .status-picker .popout-menu-item:nth-child(4) .helper::after{
-	content: var(--status-dnd) !important;
-	font-size: 12px;
+    content: var(--status-dnd) !important;
+    font-size: 12px;
 }
 
 
 /* Invisible */
 .status-invisible ~ .status-text::after {
-	content: var(--status-invis-title);
-	font-size: 15px; 
+    content: var(--status-invis-title);
+    font-size: 15px;
 }
 .status-picker .popout-menu-item:nth-child(5) .helper::after{
-	content: var(--status-invis) !important;
-	font-size: 12px;
+    content: var(--status-invis) !important;
+    font-size: 12px;
 }
