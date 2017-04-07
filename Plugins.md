@@ -101,6 +101,22 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/CodeblockHeight.css";
 ```
 
+### [BETA] Custom Status Picker
+[Click here for preview](https://light-theme-hurts.my-ey.es/0245f1.png)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/customDnD.css";
+:root{
+    /* Status names */
+    --status-online-title: "Online";
+    --status-idle-title: "Idle";
+    --status-dnd-title: "Dungeons and Dragons";
+    --status-invis-title: "Invisible";
+	
+    /* Status descriptions */
+	--status-dnd: "Signifies that you are playing Dungeons and Dragons.";
+	--status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
+}
+
 ### Remove blocked messages
 ```css
 .message-group-blocked-btn { display: none; }
