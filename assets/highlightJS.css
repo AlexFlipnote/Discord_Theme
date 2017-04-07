@@ -49,7 +49,7 @@
 }
 
 .code{
-    font-family: var(--code-font), monospace !important;
+  font-family: var(--code-font), monospace !important;
 }
 
 .hljs {
