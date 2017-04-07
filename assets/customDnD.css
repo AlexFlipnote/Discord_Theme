@@ -1,6 +1,8 @@
 :root{
 	--status-dnd: "Signifies that you are playing Dungeons and Dragons.";
+	--status-dnd-title: "Dungeons and Dragons";
 	--status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
+	--status-invis-title: "Invisible";
 }
 
 /* Hide old text */
@@ -13,7 +15,7 @@
 
 /* DnD */
 .status-dnd ~ .status-text::after {
-	content: "Dungeons and Dragons";
+	content: var(--status-dnd-title);
 	font-size: 15px; 
 }
 .status-picker .popout-menu-item:nth-child(4) .helper::after{
@@ -24,7 +26,7 @@
 
 /* Invisible */
 .status-invisible ~ .status-text::after {
-	content: "Invisible";
+	content: var(--status-invis-title);
 	font-size: 15px; 
 }
 .status-picker .popout-menu-item:nth-child(5) .helper::after{
