@@ -48,7 +48,7 @@
     --code-diff-del: #C24848;
 }
 
-.code{
+code{
   font-family: var(--code-font), monospace !important;
 }
 
@@ -114,7 +114,7 @@
 }
 
 /* Class */
-.hljs-class{}
+.hljs-class{
   color: var(--code-class) !important;
 }
 

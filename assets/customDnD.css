@@ -1,0 +1,33 @@
+:root{
+	--status-dnd: "Signifies that you are playing Dungeons and Dragons.";
+	--status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
+}
+
+/* Hide old text */
+.status-dnd ~ .status-text,
+.status-invisible ~ .status-text,
+.status-picker .popout-menu-item:nth-child(4) .helper,
+.status-picker .popout-menu-item:nth-child(5) .helper {
+	font-size: 0; 
+}
+
+/* DnD */
+.status-dnd ~ .status-text::after {
+	content: "Dungeons and Dragons";
+	font-size: 15px; 
+}
+.status-picker .popout-menu-item:nth-child(4) .helper::after{
+	content: var(--status-dnd) !important;
+	font-size: 12px;
+}
+
+
+/* Invisible */
+.status-invisible ~ .status-text::after {
+	content: "Invisible";
+	font-size: 15px; 
+}
+.status-picker .popout-menu-item:nth-child(5) .helper::after{
+	content: var(--status-invis) !important;
+	font-size: 12px;
+}
