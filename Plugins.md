@@ -118,6 +118,12 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 }
 ```
 
+### [BETA] Hidden search bar
+[Preview](https://i.alexflipnote.xyz/04082tk.gif)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/hideSearch.css";
+```
+
 ### Remove blocked messages
 ```css
 .message-group-blocked-btn { display: none; }
