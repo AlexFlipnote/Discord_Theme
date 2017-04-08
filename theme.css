@@ -1609,7 +1609,7 @@
 .guilds-wrapper .guild.guilds-add:hover:after,
 .guilds-wrapper .guilds .guild a:hover,
 .guilds-wrapper .guilds .guild.selected .guild-inner,
-.guilds-wrapper .guilds .guild.active .guild-inne {
+.guilds-wrapper .guilds .guild.active .guild-inner {
   background-color: transparent !important;
 }
 
@@ -1654,6 +1654,9 @@
   background: transparent !important;
 }
 
+.guilds-wrapper .guilds .guild.audio .guild-inner:after { 
+	top: 24px; 
+}
 
 /* END: Server Section */
 
