@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.34";
+  content: "Theme version: 1.0.3.56";
 }
 /* GLOBAL */
 :root {
@@ -1297,6 +1297,15 @@
   background-color: #606060;
   color: #fff;
 }
+
+.form .btn-default, .form .btn-default:hover {
+    background-color: var(--dark-secondary);
+}
+
+.form .btn.red {
+    background-color: var(--dark-secondary);
+}
+
 /* END: Form */
 
 /* Modal */
