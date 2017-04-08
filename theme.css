@@ -1686,10 +1686,6 @@
   visibility: hidden;
 }
 
-.new-messages-indicator {
-  display:none;
-}
-
 .dms .guild .badge,
 .guilds .guild.unread .badge,
 .guilds .guild .badge {
