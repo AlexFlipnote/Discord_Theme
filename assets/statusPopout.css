@@ -1,0 +1,22 @@
+.user-popout .header{
+    width: 450px !important;
+    height: 20px !important;
+}
+
+.avatar-popout{
+    z-index:0;
+}
+
+.header .username-wrapper{
+    z-index: 5;
+}
+
+.avatar-popout .status{
+    z-index:-1 !important;
+    border-radius:3px !important;
+    width:450px !important;
+    height:75px !important;
+    top:-11px !important;
+    left:-30px !important;
+    opacity: 0.4;
+}

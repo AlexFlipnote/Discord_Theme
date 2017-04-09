@@ -124,6 +124,11 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/hideSearch.css";
 ```
 
+# [BETA] Status Popout
+[Preview](https://light-theme-hurts.my-ey.es/2fe518.png)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/statusPopout.css";
+```
 ### Remove blocked messages
 ```css
 .message-group-blocked-btn { display: none; }
