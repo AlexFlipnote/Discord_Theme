@@ -41,7 +41,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
 ```
 
-### [BETA] Customize codeblocks
+### Customize codeblocks
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/highlightJS.css";
 :root {
@@ -96,7 +96,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/CodeblockHeight.css";
 ```
 
-### [BETA] Custom Status Picker
+### Custom Status Picker
 [Click here for preview](https://light-theme-hurts.my-ey.es/0245f1.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/customDnD.css";
@@ -113,7 +113,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 }
 ```
 
-### [BETA] Hidden search bar
+### Hidden search bar
 [Preview](https://i.alexflipnote.xyz/04082tk.gif)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/hideSearch.css";
