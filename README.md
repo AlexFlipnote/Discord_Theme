@@ -4,10 +4,10 @@
 ***Discord_Theme*** theme is made by **AlexFlipnote#0021** & **CyberRonin#5517**<br>
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins (almost, depends if the import URL is custom made for 1 theme).
 
-Do you need more help? Join my server! **[Discord Invite]https://discord.gg/J4mwTJR**
+Do you need more help? Join my server! **[Discord Invite](https://discord.gg/J4mwTJR)**
 
 ## FAQ
-**Where can I talk with you?**<br>Here: [Discord Invite]https://discord.gg/J4mwTJR
+**Where can I talk with you?**<br>Here: [Discord Invite](https://discord.gg/J4mwTJR)
 
 **What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
 to change stuff, download the theme.css, however if you wish for a theme that updates, use **autotheme.css** :P
