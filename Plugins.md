@@ -129,3 +129,9 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 ```css
 .message-group-blocked-btn { display: none; }
 ```
+
+### Restore the status picker from before the rewrite
+[Click here for preview](http://i.imgur.com/PjKdIla.gif)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/minimalStatusPicker.css";
+```
