@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.03";
+  content: "Theme version: 1.0.4.04";
 }
 /* GLOBAL */
 :root {
@@ -205,6 +205,10 @@
 
 /* User Profile Modal */
 /* BOTH | This one can't be used on light and dark, must define both */
+.avatar-profile {
+    background-size: 128px 128px;
+    margin-top: -29px;
+}
 .avatar-profile .status {
   border-color: var(--dark-secondary);
 }
@@ -212,9 +216,16 @@
   background-color: var(--dark-highlight);
   background-image: none;
 }
+#user-profile-modal .header .header-info {
+    margin-top: -30px;
+}
 #user-profile-modal .scroller {
   background-color: var(--dark-secondary);
   border-bottom: 0;
+}
+#user-profile-modal .tab-bar {
+    margin-left: -185px;
+    margin-top: 0px;
 }
 #user-profile-modal .tab-bar-container {
   background-color: var(--dark-primary);
