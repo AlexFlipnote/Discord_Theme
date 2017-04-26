@@ -15,6 +15,7 @@
   --light-secondary: #ecf0f1;
   --light-highlight: #9E9E9E;
   --light-dark-text: #2e3136;
+  --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
 .theme-dark .messages-wrapper .messages .divider span,
 .theme-light .messages-wrapper .messages .divider span {
@@ -138,7 +139,7 @@
   background-color: var(--dark-primary);
 }
 .theme-dark .ui-guild-nsfw .image, .theme-light .ui-guild-nsfw .image {
-  background-image: url("https://i.alexflipnote.xyz/c2472b.png");
+  background-image: var(--nsfw-image);
 }
 
 .theme-dark .ui-guild-nsfw .title, .theme-light .ui-guild-nsfw .title { font-size: 0; }
