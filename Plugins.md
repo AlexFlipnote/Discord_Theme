@@ -14,7 +14,9 @@ body {
 
 ### Changing colours
 You can actually change any colours of backgrounds and such by just implementing
-this into your autotheme.css, rgb(a), hex, anything. Enjoy
+this into your autotheme.css, rgb(a), hex, anything. 
+You can also change the background image in NSFW channels. Enjoy!
+[Custom NSFW Preview](https://light-theme-hurts.my-ey.es/4bbd82.png)
 ```css
 :root {
   --notif: #7A78BD;
@@ -26,6 +28,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
   --light-secondary: #ecf0f1;
   --light-highlight: #9E9E9E;
   --light-dark-text: #2e3136;
+  --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
 ```
 
