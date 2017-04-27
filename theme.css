@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.16";
+  content: "Theme version: 1.0.4.17";
 }
 /* GLOBAL */
 :root {
@@ -43,6 +43,10 @@
   background: transparent;
   background-color: transparent;
   border-color: transparent;
+}
+
+.theme-dark .ui-card-primary.editable {
+  background: rgba(0, 0, 0, 0);
 }
 
 .ui-standard-sidebar-view .sidebar-region .sidebar {
@@ -946,7 +950,7 @@
 .theme-dark .channel-textarea-autocomplete-inner li { background-color: var(--dark-primary)!important; }
 .theme-dark .message-group .comment .markup pre code { background: rgba(0, 0, 0, 0.3); }
 .theme-dark .message-group .comment .markup pre { border: 2px solid rgba(0, 0, 0, 0.3); }
-.theme-dark .invite-button { background-color: rgba(0, 0, 0, 0.3); border-color: rgba(0, 0, 0, 0); }
+.theme-dark .invite-button { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
 .theme-dark .message-group .embed { background-color: rgba(26, 28, 31, 1); border-color: rgba(26, 28, 31, 1); }
 
 /* LIGHT */
