@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.15";
+  content: "Theme version: 1.0.4.16";
 }
 /* GLOBAL */
 :root {
@@ -944,9 +944,9 @@
 .theme-dark .channel-textarea-autocomplete-inner ul { background-color: var(--dark-primary)!important; }
 .theme-dark .channel-textarea-autocomplete-inner li.active { background-color: var(--dark-secondary)!important;}
 .theme-dark .channel-textarea-autocomplete-inner li { background-color: var(--dark-primary)!important; }
-.theme-dark .message-group .comment .markup pre code { background: #1A1C1F; }
-.theme-dark .message-group .comment .markup pre { border: 2px solid #1A1C1F; }
-.theme-dark .invite-button { background-color: #1A1C1F; border-color: #1A1C1F; }
+.theme-dark .message-group .comment .markup pre code { background: rgba(0, 0, 0, 0.3); }
+.theme-dark .message-group .comment .markup pre { border: 2px solid rgba(0, 0, 0, 0.3); }
+.theme-dark .invite-button { background-color: rgba(0, 0, 0, 0.3); border-color: rgba(0, 0, 0, 0); }
 .theme-dark .message-group .embed { background-color: rgba(26, 28, 31, 1); border-color: rgba(26, 28, 31, 1); }
 
 /* LIGHT */
@@ -999,9 +999,6 @@
 /* DARK */
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
 .theme-dark .message-group .comment .markup { color: hsla(0,0%,100%,.7) !important; }
-.theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
-  background: #1A1C1F;
-}
 /* LIGHT */
 .chat .messages-wrapper { background-color: var(--light-secondary); }
 .message-group .comment .markup { color: #2e3136; }
