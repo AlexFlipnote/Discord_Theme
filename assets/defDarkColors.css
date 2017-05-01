@@ -5,16 +5,13 @@
 :root {
   /*--<var>: <value>*/
   --rednotif: #FF0000;
-  --notif: #7A78BD;
-  --accent: #7A78BD;
-  --dark-primary: #2e3136;
-  --dark-secondary: #36393e;
-  --dark-highlight: #2e3136;
-  --dark-highlight-guildlist: #1e2124;
-  --light-primary: #ddd;
-  --light-secondary: #ecf0f1;
-  --light-highlight: #9E9E9E;
---nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
+  --notif: #7289DA;
+  --accent: #7289DA;
+  --dark-primary: #23272A;
+  --dark-secondary: #2C2F33;
+  --dark-highlight: #23272A;
+  --dark-highlight-guildlist: #23272A;
+  --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
 
 /* Server Section */
