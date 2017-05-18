@@ -47,7 +47,7 @@ You can also change the background image in NSFW channels. Enjoy!
 ### [Early Access] BetterAnimations
 Better Animations, with huge animation improvement.
 
-[Click here for preview animations](https://maxie-pad.is-pretty.sexy/84f776.gif)
+[Click here to preview animations](https://maxie-pad.is-pretty.sexy/84f776.gif)
 ```css
 @import "https://rawgit.com/Maxie01/Discord_Theme/master/assets/BA-D.css";
 ```
