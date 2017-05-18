@@ -1,0 +1,85 @@
+#user-profile-modal, .form, .emoji-picker,.create-guild-container {
+    animation-name: slideUp1; 
+
+    animation-duration: 1s;    
+
+    animation-timing-function: ease;    
+
+    visibility: visible !important;            
+}
+
+@keyframes slideUp1 {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-2%);
+    }
+    65%{
+        transform: translateY(3%);
+    
+    }            
+    100% {
+        transform: translateY(0%);
+    }    
+}
+
+.context-menu  {
+	animation-name: slideUp2;
+
+	animation-duration: .5s;	
+
+	animation-timing-function: ease;	
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp2 {
+	0% {
+		transform: translateY(50%);
+	}	
+}
+
+.user-popout  {
+	border: 0;
+	border-radius: 0;
+	animation-name: bigEntrance;
+
+	animation-duration: 1s;	
+
+	animation-timing-function: ease-out;	
+
+	visibility: visible !important;			
+}
+
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.3);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(1);
+		opacity: 1;
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}		
+}
+
+.create-guild-container .create-or-join .form-inner, .create-guild-container .form {
+	animation-name: shittytest;
+
+	animation-duration: 0s;	
+
+	animation-timing-function: ease-out;	
+
+	visibility: visible !important;			
+}
+
+@keyframes shittytest {	
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}		
+}
