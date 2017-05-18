@@ -44,6 +44,14 @@ You can also change the background image in NSFW channels. Enjoy!
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/defDarkColors.css";
 ```
 
+### [Early Access] BetterAnimations
+Better Animations, with huge animation improvement.
+
+[Click here for preview animations](https://maxie-pad.is-pretty.sexy/84f776.gif)
+```css
+@import "https://rawgit.com/Maxie01/Discord_Theme/master/assets/BA-D.css";
+```
+
 ### Auto-hide Member list in Guilds
 [Click here for preview](https://i.alexflipnote.xyz/cc78b7.gif)
 ```css
