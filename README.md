@@ -10,7 +10,7 @@ Do you need more help? Join my server! **[Discord Invite](https://discord.gg/J4m
 **Where can I talk with you?**<br>Here: [Discord Invite](https://discord.gg/J4mwTJR)
 
 **What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
-to change stuff, download the theme.css, however if you wish for a theme that updates, use **autotheme.css** :P
+to change stuff, download the **theme.css**, however if you wish for a theme that updates, use **autotheme.css** :P
 
 **How do I use plugins?**<br>Read the [Documentation](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Documentation.md), then get some plugins [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
 
