@@ -60,6 +60,11 @@
   box-shadow: none;
 }
 
+# Ghetto Fix
+div[class*="container-"], div[class*="content-"] {
+    background-color: rgba(0,0,0,0)!important;
+}
+
 .message-group-blocked {
   background: rgba(0, 0, 0, 0.5)!important;
   border-color: rgba(0, 0, 0, 0.5)!important;
