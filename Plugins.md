@@ -58,6 +58,13 @@ Better Animations, with huge animation improvement.
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
 ```
 
+### [Early Access] BetterAnimations
+Better Animations, with huge animation improvement.
+[Click here for preview](https://github.com/Maxie01/BetterAnimations-Discord/blob/master/README.md)
+```css
+@import "https://gitcdn.xyz/repo/Maxie01/BetterAnimations-Discord/master/BA-D.css";
+```
+
 ### Customize codeblocks
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/highlightJS.css";
