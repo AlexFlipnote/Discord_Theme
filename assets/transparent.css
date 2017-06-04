@@ -37,8 +37,8 @@
   color: rgba(255, 255, 255, 0.8)!important;
 }
 
-/* NEW CHANNELS FIX  [Thanks Maxie]*/
-div[class*="container-"], div[class*="content-"]:not([class="content-region"]) {
+/* NEW CHANNELS FIX  [Thanks Maxie and Charles]*/
+div[class*="container-"], div[class*="content-"]:not(.content-region) {
     background-color: rgba(0,0,0,0) !important;
 }
 
@@ -63,11 +63,6 @@ div[class*="container-"], div[class*="content-"]:not([class="content-region"]) {
   background: transparent;
   border: none;
   box-shadow: none;
-}
-
-# Ghetto Fix
-div[class*="container-"], div[class*="content-"] {
-    background-color: rgba(0,0,0,0)!important;
 }
 
 .message-group-blocked {
