@@ -111,3 +111,5 @@
     position: relative !important;
     left: 12px !important;
 }
+
+#bd-pub-button { display: none; }
