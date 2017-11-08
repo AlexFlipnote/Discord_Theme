@@ -1,0 +1,26 @@
+scss_files: 'scss/*.scss'
+
+linters:
+  ColorVariable:
+    enabled: false
+
+  SingleLinePerSelector:
+    enabled: false
+
+  IdSelector:
+    enabled: false
+
+  ImportantRule:
+    enabled: false
+
+  SelectorFormat:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+
+  SelectorDepth:
+    enabled: false
+
+  UrlFormat:
+    enabled: false
