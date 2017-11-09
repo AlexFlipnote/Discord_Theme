@@ -1,0 +1,22 @@
+@import '../assets/browser';
+
+.app a, .connecting a {
+  color: var(--accent);
+}
+
+.connecting {
+  background: var(--dark-highlight);
+
+  img, video, video.ready { visibility: hidden; }
+  .quote { visibility: hidden; }
+  .attribution { visibility: hidden; }
+
+  &.attribution, &.connection-status, &.quote {
+    @include crossbrowser('animation', 'pulse 1.5s infinite');
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: -122px;
+    text-align: center;
+    text-transform: none;
+  }
+}

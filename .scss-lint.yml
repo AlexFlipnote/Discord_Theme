@@ -24,3 +24,6 @@ linters:
 
   UrlFormat:
     enabled: false
+
+  NestingDepth:
+    enabled: false

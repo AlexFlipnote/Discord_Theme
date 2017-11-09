@@ -1,0 +1,108 @@
+// Emotes: https://material.io/icons/
+
+.ui-text-input .input:focus { border-color: var(--accent) !important; }
+.ui-switch-checkbox:checked+.ui-switch { background: var(--accent); }
+.guild-settings-modal-emoji .no-emoji p { color: #808080; }
+.user-settings-games .now-playing-add .link:hover { color: var(--accent); }
+
+.ui-standard-sidebar-view { .content-column, .custom-column { max-width: 100%; } }
+.ui-sidebar-scrollable+.ui-content { max-width: 100%; }
+
+.ui-tab-bar.SIDE .ui-tab-bar-item {
+  &::before {
+    margin-right: 10px;
+    vertical-align: -25%;
+  }
+
+  &.selected {
+    background-color: var(--accent);
+    color: #fff !important;
+  }
+}
+
+.ui-button {
+  .brand.filled, .green.filled {
+    background-color: var(--accent);
+
+    &:hover {
+      background-color: var(--accent);
+      opacity: .8;
+    }
+  }
+
+  .brand.outlined {
+    border-color: var(--accent);
+    color: var(--accent);
+
+    &:hover {
+      border-color: var(--accent);
+      opacity: .6;
+    }
+  }
+
+  &.link-color.link {
+    color: var(--accent);
+
+    &:not(:disabled):active .ui-button-contents, &:not(:disabled):hover .ui-button-contents {
+      background-image: none;
+      border-bottom: 1px solid var(--accent);
+    }
+  }
+}
+
+.ui-slider .slider-bar-fill {
+  background: var(--accent);
+  height: 100%;
+}
+
+.ui-checkbox-wrapper .ui-checkbox.round.checked.inverted {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.form {
+  .btn.green {
+    background-color: var(--accent);
+
+    &:hover { background-color: var(--accent); }
+  }
+}
+
+.theme-dark {
+  div[class*="user-info-viewing cardPrimary-"] { background: transparent; border-color: transparent; }
+  .ui-card-primary {
+    background: transparent;
+    background-color: transparent;
+    border-color: transparent;
+
+    &.editable { background: rgba(0, 0, 0, 0); }
+  }
+
+  .ui-standard-sidebar-view {
+    .sidebar-region, .sidebar-region .scroller { background-color: var(--dark-highlight); }
+    .content-region, .content-region .scroller { background-color: var(--dark-secondary); }
+  }
+
+  .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: var(--accent); }
+}
+
+// Light theme
+.theme-light {
+  .ui-standard-sidebar-view {
+    .sidebar-region .scroller { background-color: var(--light-primary); }
+    .content-region .scroller { background-color: var(--light-secondary); }
+  }
+
+  .ui-tab-bar.SIDE {
+    .ui-tab-bar-item.brand { color: #9b59b6; }
+    .ui-tab-bar-header { color: #000; }
+  }
+
+  .ui-card-primary {
+    background: transparent;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .ui-tab-bar-item:hover { background-color: var(--dark-secondary); color: var(--light-primary); }
+}

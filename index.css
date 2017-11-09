@@ -31,4 +31,189 @@
 #app-mount div[class*="titleBar-"] {
   background: var(--dark-highlight); }
 
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-o-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+.app a, .connecting a {
+  color: var(--accent); }
+
+.connecting {
+  background: var(--dark-highlight); }
+  .connecting img, .connecting video, .connecting video.ready {
+    visibility: hidden; }
+  .connecting .quote {
+    visibility: hidden; }
+  .connecting .attribution {
+    visibility: hidden; }
+  .connecting.attribution, .connecting.connection-status, .connecting.quote {
+    -webkit-animation: "pulse 1.5s infinite";
+    -moz-animation: "pulse 1.5s infinite";
+    -ms-animation: "pulse 1.5s infinite";
+    animation: "pulse 1.5s infinite";
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: -122px;
+    text-align: center;
+    text-transform: none; }
+
+.ui-text-input .input:focus {
+  border-color: var(--accent) !important; }
+
+.ui-switch-checkbox:checked + .ui-switch {
+  background: var(--accent); }
+
+.guild-settings-modal-emoji .no-emoji p {
+  color: #808080; }
+
+.user-settings-games .now-playing-add .link:hover {
+  color: var(--accent); }
+
+.ui-standard-sidebar-view .content-column, .ui-standard-sidebar-view .custom-column {
+  max-width: 100%; }
+
+.ui-sidebar-scrollable + .ui-content {
+  max-width: 100%; }
+
+.ui-tab-bar.SIDE .ui-tab-bar-item::before {
+  margin-right: 10px;
+  vertical-align: -25%; }
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected {
+  background-color: var(--accent);
+  color: #fff !important; }
+
+.ui-button .brand.filled, .ui-button .green.filled {
+  background-color: var(--accent); }
+  .ui-button .brand.filled:hover, .ui-button .green.filled:hover {
+    background-color: var(--accent);
+    opacity: .8; }
+.ui-button .brand.outlined {
+  border-color: var(--accent);
+  color: var(--accent); }
+  .ui-button .brand.outlined:hover {
+    border-color: var(--accent);
+    opacity: .6; }
+.ui-button.link-color.link {
+  color: var(--accent); }
+  .ui-button.link-color.link:not(:disabled):active .ui-button-contents, .ui-button.link-color.link:not(:disabled):hover .ui-button-contents {
+    background-image: none;
+    border-bottom: 1px solid var(--accent); }
+
+.ui-slider .slider-bar-fill {
+  background: var(--accent);
+  height: 100%; }
+
+.ui-checkbox-wrapper .ui-checkbox.round.checked.inverted {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important; }
+
+.form .btn.green {
+  background-color: var(--accent); }
+  .form .btn.green:hover {
+    background-color: var(--accent); }
+
+.theme-dark div[class*="user-info-viewing cardPrimary-"] {
+  background: transparent;
+  border-color: transparent; }
+.theme-dark .ui-card-primary {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent; }
+  .theme-dark .ui-card-primary.editable {
+    background: rgba(0, 0, 0, 0); }
+.theme-dark .ui-standard-sidebar-view .sidebar-region, .theme-dark .ui-standard-sidebar-view .sidebar-region .scroller {
+  background-color: var(--dark-highlight); }
+.theme-dark .ui-standard-sidebar-view .content-region, .theme-dark .ui-standard-sidebar-view .content-region .scroller {
+  background-color: var(--dark-secondary); }
+.theme-dark .ui-tab-bar.SIDE .ui-tab-bar-item.brand {
+  color: var(--accent); }
+
+.theme-light .ui-standard-sidebar-view .sidebar-region .scroller {
+  background-color: var(--light-primary); }
+.theme-light .ui-standard-sidebar-view .content-region .scroller {
+  background-color: var(--light-secondary); }
+.theme-light .ui-tab-bar.SIDE .ui-tab-bar-item.brand {
+  color: #9b59b6; }
+.theme-light .ui-tab-bar.SIDE .ui-tab-bar-header {
+  color: #000; }
+.theme-light .ui-card-primary {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent; }
+.theme-light .ui-tab-bar-item:hover {
+  background-color: var(--dark-secondary);
+  color: var(--light-primary); }
+
 /*# sourceMappingURL=index.css.map */
