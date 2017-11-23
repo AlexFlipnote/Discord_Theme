@@ -1,0 +1,58 @@
+@import '../assets/browser';
+@import '../assets/animation';
+
+.private-channel-recipients-invite,
+.messages-popout-wrap {
+  @include animation(popout-content 400ms cubic-bezier(.3, .3, 0, 1));
+}
+
+.popout.popout-bottom-right.no-arrow.no-shadow {
+  margin-left: 10px !important;
+  margin-top: 27px !important;
+  z-index: 10 !important;
+}
+
+.header-toolbar {
+  .private-channel-call-btns-wrapper { display: flex; }
+  button {
+    @include transition(all 300ms cubic-bezier(.23, .23, 0, 1));
+    display: block;
+
+    &.popout-open span, .header-toolbar button.active { opacity: 1; z-index: 20; }
+    &.popout-open span[style*='567632a2702aed0296e15d68d6cae738.svg']::before { background-image: url('/assets/567632a2702aed0296e15d68d6cae738.svg'); }
+    &.popout-open span {
+      background-image: none !important;
+
+      span::before {
+        @include animation(pin-icon 500ms cubic-bezier(.3, .3, 0, 1));
+        @include transform(translate(0, 65px));
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMnY0aDEuNnYtNEgxOXYtMmwtMi0yVjZ6Ii8+CiAgPC9nPgo8L3N2Zz4=');
+        content: '';
+        display: inline-block;
+        height: 30px;
+        margin-left: 2px;
+        margin-top: 2px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+div[class*="modal-"] {
+  h4[class*="defaultColor-"] {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+  }
+
+  div[class*="scroller-"] > div[class*="primary-"] {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+}
+
+div[class*="channels-"] div[class*="container-"] + div[class*="container-"] {
+  background: var(--dark-primary);
+}
