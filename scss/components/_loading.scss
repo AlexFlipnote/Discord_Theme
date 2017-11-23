@@ -1,4 +1,4 @@
-@import '../assets/browser';
+@import '../assets/animation';
 
 .app a, .connecting a {
   color: var(--accent);
@@ -12,7 +12,7 @@
   .attribution { visibility: hidden; }
 
   &.attribution, &.connection-status, &.quote {
-    @include crossbrowser('animation', 'pulse 1.5s infinite');
+    @include animation(pulse 1.5s infinite);
     color: #fff;
     font-size: 40px;
     margin-bottom: -122px;

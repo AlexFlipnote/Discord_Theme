@@ -5,3 +5,169 @@
   50% { @include transform(scale(1.1)); }
   100% { @include transform(scale(1)); }
 }
+
+@include keyframes(popout-content) {
+  from {
+    @include transform(translate(0, -65px));
+    opacity: 0;
+  }
+}
+
+@include keyframes(pin-icon) {
+  from { @include transform(translate(0, 0)); }
+  to { @include transform(translate(0, 65px)); }
+}
+
+@include keyframes(user-popout-anim) {
+  from {
+    @include transform(translateX(-50px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(profile-badge) {
+  from {
+    @include transform(translateX(-40px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(profile-badge-info) {
+  from { @include transform(translateX(-60px)); }
+  100% { @include transform(translateX(0)); }
+}
+
+@include keyframes(emoji-picker) {
+  from {
+    @include transform(translateX(50px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(status-picker) {
+  from {
+    @include transform(translateY(40px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(sub-contextmenu-anim) {
+  from {
+    @include transform(translateX(20px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(server-create-enter) {
+  from {
+    @include transform(translateY(-40px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(quickswitcher-menu) {
+  from {
+    @include transform(translateY(40px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(tooltip-top-anim) {
+  from {
+    @include transform(translateY(-20px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(tooltip-bottom-anim) {
+  from {
+    @include transform(translateY(20px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(tooltip-right-anim) {
+  from {
+    @include transform(translateX(20px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@keyframes tooltip-left-anim {
+  from {
+    @include transform(translateX(-20px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@keyframes server-settings {
+  from {
+    @include transform(translateY(-150px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(current-channel) {
+  from { opacity: 0; }
+  100% { opacity: 1; }
+}
