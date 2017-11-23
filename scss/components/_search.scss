@@ -1,0 +1,88 @@
+@import '../assets/animation';
+
+.theme-dark {
+  .search .search-bar { background: transparent; }
+  .search-popout {
+    background-color: var(--dark-highlight);
+    color: #fff;
+
+    .option {
+      &::after { background: var(--dark-highlight); }
+
+      .selected {
+        background-color: var(--dark-secondary);
+        &::after { background: linear-gradient(90deg, hsla(0, 0%, 95%, 0) 0, var(--dark-secondary) 50%); }
+      }
+    }
+  }
+
+  .search-results-wrap {
+    .search-result::before, .search-result::after, .channel-separator .channel-name { background: transparent; }
+    .search-header { background-color: var(--dark-highlight); }
+    .scroller-wrap .scroller { background-color: var(--dark-primary); }
+    .search-result {
+      .hit { box-shadow: none; }
+      .search-result-message.hit {
+        background-color: var(--dark-primary);
+        border: 0;
+        border-radius: 0;
+      }
+
+      &.expanded .search-result-message.hit { background-color: var(--dark-highlight); }
+    }
+
+    .channel-separator .channel-name { margin-left: 15px; }
+  }
+
+  .react-datepicker {
+    background-color: var(--dark-highlight);
+    color: #fff;
+
+    .react-datepicker__day.react-datepicker__day--selected:hover,.react-datepicker .react-datepicker__day:hover {
+      background-color: var(--dark-highlight);
+      color: #fff;
+    }
+
+    .react-datepicker__day.react-datepicker__day--selected, .react-datepicker .react-datepicker__day {
+      background-color: var(--dark-secondary);
+    }
+
+    .react-datepicker__day.react-datepicker__day--disabled,.react-datepicker .react-datepicker__day.react-datepicker__day--disabled:hover {
+      background-color: rgba(0, 0, 0, .05);
+      color: #808080;
+    }
+
+    .react-datepicker__day--disabled,.react-datepicker .react-datepicker__day--outside-month {
+      background-color: var(--dark-secondary);
+      color: #fff;
+    }
+
+    .react-datepicker__day, .react-datepicker__day.react-datepicker__day--selected { color: #fff; }
+    .react-datepicker__day-name { color: #fff; }
+    .react-datepicker .react-datepicker__current-month { color: #fff; }
+
+    .react-datepicker__header {
+      background-color: var(--dark-highlight);
+      color: #fff;
+    }
+  }
+}
+
+div[class*="scrollerWrap-"] {
+  background: var(--dark-highlight);
+}
+
+div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
+  background: var(--dark-primary);
+}
+
+
+// Private Message Search
+.private-channels .search-bar {
+  background-color: var(--dark-highlight);
+  border-radius: 0;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.search-bar .search-bar-inner { background: rgba(47, 47, 47, .9); }

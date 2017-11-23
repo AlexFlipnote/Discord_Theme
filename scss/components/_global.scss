@@ -66,3 +66,33 @@
     }
   }
 }
+
+.form {
+  header { color: #fff; }
+  .btn.red { background-color: var(--dark-secondary); }
+
+  .form-header {
+    background: var(--dark-highlight);
+    border-bottom: 0;
+    color: #fff;
+  }
+
+  .form-actions {
+    background: var(--dark-secondary);
+    border-top: 0;
+  }
+
+  .btn-default, .btn-default:hover {
+    @include transition(background-color .2s ease);
+    background-color: var(--dark-secondary);
+    border-bottom: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 10px 20px;
+    position: relative;
+  }
+}

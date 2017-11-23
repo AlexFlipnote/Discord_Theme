@@ -134,12 +134,6 @@ div[class*="avatarStatusNormal-"] { border: 0; }
   }
 }
 
-.alert.form.has-icon::before {
-  background-color: transparent;
-  background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
-  border-radius: 0;
-}
-
 
 // Large profile popout
 .avatar-profile {
@@ -579,5 +573,139 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
   input[class*="input-"] {
     background: var(--dark-secondary);
     box-shadow: 0;
+  }
+}
+
+
+// Tool tip
+.tooltip {
+  background: rgba(22, 22, 22, .6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .9);
+  color: #fff;
+
+  &.tooltip-top { @include animation(tooltip-top-anim 200ms ease-in-out); }
+  &.tooltip-bottom { @include animation(tooltip-bottom-anim 200ms ease-in-out); }
+  &.tooltip-right { @include animation(tooltip-right-anim 200ms ease-in-out); }
+  &.tooltip-left { @include animation(tooltip-left-anim 200ms ease-in-out); }
+  &::after { opacity: 0; }
+}
+
+
+// Help popout | F1 Key
+.need-help-modal {
+  a, ul li { color: #fff; }
+  .header {
+    background-color: var(--dark-highlight);
+    border-radius: 0;
+    color: var(--dark-highlight);
+
+    input[type=text] {
+      background: transparent;
+      border-bottom: 2px solid #696969;
+      border-radius: 0;
+      box-shadow: 0 0;
+
+      &:focus {
+        border-bottom: 2px solid #696969;
+        color: #fff;
+      }
+    }
+  }
+
+  .footer {
+    background-color: var(--dark-highlight);
+    border-radius: 0;
+    border-top: 0;
+    color: #fff;
+  }
+
+  .form-inner {
+    &.loading { background-color: var(--dark-secondary); }
+    .failed {
+      .poop { background-image: url('/assets/4dc13fd52f691020a1308c5b6cbc6f49.svg'); }
+      p { display: none; }
+
+      &::after {
+        color: #fff;
+        content: 'Looks like the help site is down...';
+      }
+    }
+  }
+
+  // Splitted with Deprecated
+  &.deprecated {
+    .header {
+      background-color: var(--dark-highlight);
+
+      input[type=text] {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    .footer { background-color: var(--dark-secondary); border-top: 0; }
+  }
+}
+
+
+// Pin message
+.themed-popout .header { background: var(--dark-highlight) !important; }
+
+.theme-dark .messages-popout-wrap {
+  background: var(--dark-primary) !important;
+  border: 0 !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .3) !important;
+  max-height: 541px !important;
+
+  .comment {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0 3px 3px !important;
+    padding: 4px 7px 10px 10px !important;
+
+    &::before {
+      border-color: transparent rgba(0, 0, 0, .3) transparent transparent;
+      left: -20px;
+      top: -4px;
+    }
+  }
+
+  .messages-popout .message-group {
+    background: transparent !important;
+    border: 0 !important;
+
+    .message-group .action-buttons .jump-button {
+      background-color: transparent;
+      &:hover { box-shadow: none; }
+    }
+  }
+}
+
+
+// Ban and kick
+.user-popout-banned-video {
+  display: none;
+}
+
+.alert.form.has-icon::before {
+  background-color: transparent;
+  background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
+  border-radius: 0;
+}
+
+.form .form-inner {
+  background-color: var(--dark-primary);
+  &:last-child { background-color: var(--dark-highlight); }
+}
+
+.alert.form .form-inner {
+  h4 { color: #fff; }
+  .cancel {
+    background-color: #e74c3c;
+    border-color: transparent;
+
+    &:hover {
+      background-color: #c0392b;
+    }
   }
 }
