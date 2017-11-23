@@ -1,0 +1,238 @@
+@import '../assets/animation';
+
+// Title Section
+.theme-dark .chat .title-wrap {
+  background-color: var(--dark-highlight);
+  border: 0;
+}
+
+.chat>.title-wrap>.topic { color: rgba(128, 128, 128, .9); }
+.chat>.title-wrap {
+  background-color: var(--light-primary);
+  border: 0;
+  box-shadow: 0;
+}
+
+.search-bar.search-bar-light {
+  background-color: var(--light-primary) !important;
+}
+
+
+// Chat Messages
+.divider.divider-red + .divider { display: none; }
+.theme-dark div[class*="title-"] { background: var(--dark-primary); }
+.theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
+
+.chat .jump-to-present-bar { left: inherit; }
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
+  color: #fff;
+
+  pre {
+    background: #1a1c1f;
+    border: 2px solid #1a1c1f;
+    color: rgb(0, 0, 0);
+  }
+
+  > code {
+    background: var(--dark-highlight);
+
+    .hljs {
+      background: #1a1c1f;
+      color: #839496;
+    }
+  }
+}
+
+.confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline {
+  background: var(--dark-highlight) !important;
+}
+
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
+.theme-dark .messages-wrapper .messages .message-group-blocked {
+  &.revealed { background: var(--dark-primary); }
+  .message-group-blocked-btn, .message-group-blocked-btn:hover {
+    @include transition(all 250ms ease);
+    background: var(--dark-primary);
+    border: 0;
+    box-shadow: transparent;
+    color: #ccc;
+  }
+}
+
+.theme-dark .friends-table .messages .divider::before, .theme-dark .friends-table .messages .divider span,
+.theme-dark .messages-wrapper .messages .divider::before, .theme-dark .messages-wrapper .messages .divider span {
+  background-color: #303030;
+}
+
+
+// Message Text Area
+.message-group {
+  h2 strong { color: var(--light-dark-text); }
+  &:last-of-type { margin-bottom: 20px !important; }
+  .comment .message-text .markup { color: var(--light-dark-text); pre { color: #000; }}
+  .edit-message {
+    .channel-textarea-inner { border: 1px solid var(--accent); }
+    .edit-operation>a { color: var(--accent); }
+  }
+}
+
+.channel-textarea-inner {
+  .channel-textarea-upload { border-right-color: none; }
+  textarea { background-color: transparent; &::-webkit-input-placeholder { color: rgba(128, 128, 128, .9) !important; }}
+}
+
+.channel-textarea-upload { border: 0; }
+.channel-textarea {
+  margin: 0;
+  &.channel-textarea-disabled { color: rgba(128, 128, 128, 1); }
+}
+
+.channel-textarea-upload:hover {
+  background-color: transparent;
+  border: 0;
+}
+
+.theme-dark .channel-textarea-upload, .theme-dark .channel-textarea-upload:hover {
+  transition: all 300ms ease;
+}
+
+.theme-dark .channel-textarea-upload {
+  $file-upload: 'https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg';
+  background: url($file-upload) 50% no-repeat;
+  opacity: .5;
+
+  &:hover {
+    background: url($file-upload) 50% no-repeat;
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
+.channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner {
+  border: 0;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+.chat form {
+  border: 0;
+  margin: 0;
+}
+
+.typing {
+  bottom: 100%;
+  left: 10px;
+  position: absolute;
+  width: auto;
+}
+
+div[class*="autocomplete-"] {
+  border: 0 !important;
+  border-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0;
+
+  &::after { border: 0; }
+  header {
+    border-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    border-bottom: 0 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  li {
+    border-radius: 0;
+    margin-bottom: 2px;
+    .active { border-radius: 0; }
+  }
+}
+
+.invite-button { background: rgba(0, 0, 0, .2); border: 0; }
+.invite-button-header { color: #fff; }
+
+.theme-dark .channel-textarea-inner {
+  background-color: transparent;
+  .channel-textarea-upload:hover { background-color: transparent; }
+}
+
+.theme-dark .chat form {
+  background-color: #3c3c3c;
+  border: 0;
+  color: #fff;
+  .typing { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
+}
+
+.theme-dark #autocomplete-popout {
+  .row { @include transition(all 50ms ease); }
+  .row.selected, #autocomplete-popout .row:hover { background: #181818; }
+  .scroller::-webkit-scrollbar { display: none; }
+}
+
+.theme-dark div[class*="autocomplete-"] {
+  background-color: var(--dark-primary) !important;
+  header { background-color: var(--dark-highlight) !important; }
+  ul { background-color: var(--dark-primary) !important; }
+  li {
+    background-color: var(--dark-primary) !important;
+    &.active { background-color: var(--dark-secondary) !important; }
+  }
+}
+
+.theme-dark .invite-button { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
+
+.theme-dark .message-group {
+  &.is-local-bot-message {
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .embed { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
+  .comment .markup {
+    color: hsla(0, 0%, 100%, .7) !important;
+
+    pre {
+      background: rgba(0, 0, 0, .2);
+      border-color: rgba(0, 0, 0, .1);
+      code { background: rgba(0, 0, 0, .1); }
+    }
+  }
+}
+
+
+.upload-modal div[class*="autocomplete-"] {
+  background: var(--dark-primary);
+  color: #fff;
+}
+
+.theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
+.channel-text-area-default, div[class*="channelTextArea-"] { margin: 0; }
+
+.theme-dark textarea[class*="textArea-"], .theme-dark div[class*="inner-"] { background: transparent; }
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"] {
+  background-color: var(--dark-primary);
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  padding-top: 5px;
+}
+
+.theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
+  background-color: var(--dark-primary);
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  padding-top: 5px;
+}
+
+.theme-brand div[class*="inner-"] {
+  background: var(--dark-highlight);
+}
+
+.emoji, .emoji.jumboable {
+  border-radius: 4px;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .3));
+}

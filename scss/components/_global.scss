@@ -41,3 +41,28 @@
 #app-mount div[class*="titleBar-"] {
   background: var(--dark-highlight);
 }
+
+.scroller-wrap {
+  &.guild-channels::-webkit-scrollbar { display: none; }
+  .scroller::-webkit-scrollbar { width: 14px; }
+  .scroller::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 4px solid rgba(255, 255, 255, 0) !important;
+  }
+
+  .scroller::-webkit-scrollbar-thumb {
+    background-color: rgba(225, 225, 225, .1) !important;
+    border: 4px solid rgba(255, 255, 255, 0) !important;
+    display: initial;
+
+    &:hover {
+      background-color: rgba(225, 225, 225, .15) !important;
+      border: 4px solid rgba(255, 255, 255, 0) !important;
+    }
+
+    &:active {
+      background-color: rgba(225, 225, 225, .2) !important;
+      border: 4px solid rgba(255, 255, 255, 0) !important;
+    }
+  }
+}
