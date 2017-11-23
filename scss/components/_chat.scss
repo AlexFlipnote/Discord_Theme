@@ -515,7 +515,7 @@ div[class*="autocomplete-"] {
       z-index: 100;
     }
 
-    &.unread::before {
+    .guild.selected.unread::before { // scss-lint:disable MergeableSelector
       @include transform(translate(35px, 5px) scale(1.2));
       visibility: visible !important;
     }
