@@ -709,3 +709,68 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
     }
   }
 }
+
+
+// Upload area
+div[class*="autocomplete-"] {
+  background-color: var(--dark-secondary) !important;
+
+  header {
+    background-color: var(--dark-highlight) !important;
+    color: var(--accent);
+    font-size: 14px;
+  }
+
+  li, ul { background-color: var(--dark-secondary) !important; }
+  ul {
+    background-color: var(--dark-secondary) !important;
+    li { color: #fff !important; &.active { background-color: var(--dark-primary) !important; }}
+  }
+}
+
+.upload-modal {
+  background-color: var(--dark-primary);
+
+  .inner {
+    border: 0;
+
+    .file {
+      .icon.image { border: 0; box-shadow: 0 0 0; }
+      .description .filename { color: var(--accent); }
+    }
+
+    .comment {
+      .label { font-size: 14px; }
+      .channel-textarea .channel-textarea-inner {
+        background-color: var(--dark-secondary);
+        border-color: var(--dark-secondary);
+        padding: 10px;
+      }
+    }
+  }
+
+  .footer {
+    background-color: var(--dark-primary);
+
+    .button-primary { color: var(--accent); }
+    .button {
+      background-color: var(--dark-primary);
+      right: 25px;
+      width: 100px;
+    }
+  }
+}
+
+
+.upload-modal-in .upload-drop-modal .instructions, .upload-modal-in .upload-drop-modal .title { color: var(--accent); }
+.upload-drop-modal .inner { border: 0; }
+.upload-drop-modal .bgScale {
+  background: var(--dark-secondary);
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}

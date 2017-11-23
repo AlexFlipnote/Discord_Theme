@@ -419,3 +419,56 @@ div[class*="autocomplete-"] {
     display: none;
   }
 }
+
+
+// Servers section
+.guilds-wrapper {
+  background: var(--dark-highlight);
+
+  .guilds {
+    .friends-icon { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg'); }
+    .guild .guild-inner { background: transparent !important; }
+    .guild.audio .guild-inner::after { top: 30px; }
+    .friends-online { display: none; }
+    .guild.selected {
+      background: transparent;
+
+      .guild-inner {
+        background-color: transparent !important;
+      }
+    }
+
+    .guild-separator {
+      left: -5px;
+      margin: 0;
+      padding-bottom: 10px;
+      position: relative;
+      width: 90%;
+    }
+  }
+
+  .guilds-wrapper .guild.guilds-add::after,
+  .guilds-wrapper .guild.guilds-add:hover::after,
+  .guilds-wrapper .guilds .guild a:hover,
+  .guilds-wrapper .guilds .guild.selected .guild-inner,
+  .guilds-wrapper .guilds .guild.active .guild-inner {
+    background-color: transparent !important;
+  }
+
+  .guild.guilds-add {
+    @include transition(border-color .25s ease, color .25s ease);
+    background: var(--dark-primary);
+    border: 1px dashed var(--accent);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 40px;
+    font-weight: 200;
+    height: 50px;
+    left: 0 !important;
+    padding: 0;
+    position: relative !important;
+    text-align: center;
+    top: 4px;
+    width: 50px;
+  }
+}
