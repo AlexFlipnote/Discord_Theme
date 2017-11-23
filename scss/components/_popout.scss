@@ -146,9 +146,23 @@ div[class*="avatarStatusNormal-"] { border: 0; }
   transform: scale(1);
 }
 
+.details-3Qyqn3, #user-profile-modal .headerText-1wl24E, .name-2ZHm1Q { color: #fff; }
+.content-3AMrS- { color: #aaa; }
+.markup .hljs::before { border-radius: 5px 5px 0 0; }
+.userPopout-4pfA0d .assetsSmallImage-2F5lSV {
+  @include transform(scale(1.2));
+  border: 0;
+}
+
 #user-profile-modal {
   border-radius: 0;
   .avatar-wrapper { background-color: transparent; }
+  .headerIconForeground-3KIzwH { fill: #fff; }
+
+  .assetsSmallImage-2F5lSV {
+    @include transform(scale(1.2) translate(-5px, -5px));
+    border: 0;
+  }
 
   .header {
     background-color: var(--dark-highlight);
