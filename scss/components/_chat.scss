@@ -22,6 +22,11 @@
 .divider.divider-red + .divider { display: none; }
 .theme-dark div[class*="title-"] { background: var(--dark-primary); }
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
+.theme-dark div[class*="headerBar-"] {
+  background: var(--dark-highlight);
+  padding-bottom: 6px;
+  padding-top: 3px;
+}
 
 .chat .jump-to-present-bar { left: inherit; }
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
@@ -62,6 +67,18 @@
 .theme-dark .friends-table .messages .divider::before, .theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider::before, .theme-dark .messages-wrapper .messages .divider span {
   background-color: #303030;
+}
+
+
+// Discord Invites
+.comment div[class*="wrapper-"] {
+  background: var(--dark-primary);
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
+
+  h5[class*="h5-"] {
+    color: #fff;
+    text-align: center;
+  }
 }
 
 
@@ -292,6 +309,8 @@ div[class*="autocomplete-"] {
 .private-channels {
   background-color: var(--dark-primary);
 
+  + div[class*="container-"] { background-color: var(--dark-highlight); }
+
   .channel {
     &:hover { background: var(--dark-secondary); opacity: .75; }
     &:hover::before { border-left: 2px inset var(--accent); }
@@ -332,6 +351,12 @@ div[class*="autocomplete-"] {
 .container-RYiLUQ {
   background-color: var(--dark-primary);
   margin-top: -1px;
+}
+
+.channels-wrap > div[class*="container-"] {
+  background-color: var(--dark-primary);
+  border-bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, .25);
 }
 
 .content-2mSKOj, .content-2mSKOj:hover { transition: all 250ms ease; }
@@ -477,9 +502,9 @@ div[class*="autocomplete-"] {
       }
     }
 
-    .guilds-wrapper .guilds .guild.selected::before,
-    .guilds-wrapper .guilds .guild.selected.unread::before,
-    .guilds-wrapper .guilds .guild.unread::before {
+    .guild.selected::before,
+    .guild.selected.unread::before,
+    .guild.unread::before {
       @include transform(translate(50px, -20px) scale(1.2));
       background: var(--notif);
       border-radius: 50%;
@@ -488,6 +513,11 @@ div[class*="autocomplete-"] {
       margin-top: 0;
       width: 12px;
       z-index: 100;
+    }
+
+    &.unread::before {
+      @include transform(translate(35px, 5px) scale(1.2));
+      visibility: visible !important;
     }
 
     .guild-separator {
@@ -523,4 +553,19 @@ div[class*="autocomplete-"] {
     top: 4px;
     width: 50px;
   }
+}
+
+
+// Markdown
+.markdown-modal {
+  .markdown-modal-header { text-align: center; }
+  .scroller-wrap { background-color: var(--dark-primary); }
+  .markdown-modal-footer { background-color: var(--dark-secondary); border-top: 0; }
+}
+
+.markdown-modal, .markdown-modal .markdown-modal-header {
+  background-color: var(--dark-highlight);
+  border-bottom: 0;
+  border-radius: 0;
+  color: #fff;
 }

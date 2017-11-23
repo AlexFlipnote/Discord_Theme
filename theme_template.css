@@ -1,53 +1,5 @@
-/* TEMP. FIX, thanks Discord :( */
-.private-channels + div[class*="container-"] {
-  background-color: var(--dark-highlight);
-}
-
-.channels-wrap > div[class*="container-"] {
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  background-color: var(--dark-primary);
-  border-bottom: 0;
-}
-
-div[class*="nameDefault-"], div[class*="nameHovered-"], div[class*="nameCollapsed"], div[class*="nameHoveredCollapsed"] {
-  text-transform: none;
-  font-size: 15px;
-}
-
-
-/* Modal */
-/* BOTH */
-.modal .modal-inner > .flex-nowrap { background: transparent; }
-.modal-content { background-color: transparent; }
-.modal-content .form-inner p { color: #fff; }
-/* END: Modal */
-
-/* Markdown */
-/* BOTH */
-.markdown-modal .markdown-modal-header { text-align: center; }
-.markdown-modal, .markdown-modal .markdown-modal-header {
-  background-color: var(--dark-highlight);
-  color: #fff;
-  border-radius: 0;
-  border-bottom: none;
-}
-.markdown-modal .scroller-wrap { background-color: var(--dark-primary); }
-.markdown-modal .markdown-modal-footer { background-color: var(--dark-secondary); border-top: none; }
-/* END: Markdown */
-
-
 /* Random CSS Meme */
-.create-guild-container.deprecated { background-color: var(--dark-highlight); }
-.create-guild-container.deprecated .form.deprecated .form-inner { background-color: transparent; }
-.create-guild-container.deprecated .action { background-color: var(--dark-primary); }
-div[class*="modal-"] div[class*="header-"] { background-color: var(--dark-highlight); }
-.theme-dark div[class*="footer-"] { background-color: var(--dark-secondary); }
-video[autoplay] { display: none; }
-div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
-  background-color: var(--dark-primary)!important;
-  border-radius: 0;
-  padding-top: 5px;
-}
+
 
 
 /* Selfish part xD */

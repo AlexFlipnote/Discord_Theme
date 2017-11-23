@@ -20,7 +20,12 @@
   --notif: #7a78bd;
 }
 
-.theme-dark .messages-wrapper .messages .divider span,
+.theme-dark {
+  div[class*="footer-"] { background-color: var(--dark-secondary); }
+  .messages-wrapper .messages .divider span {
+    background-color: transparent;
+  }
+}
 
 
 .mention {
@@ -38,6 +43,8 @@
 
 #app-mount div[class*="titleBar-"] {
   background: var(--dark-highlight);
+  margin-top: 0;
+  padding-top: 4px;
 }
 
 .scroller-wrap {
@@ -63,6 +70,14 @@
       border: 4px solid rgba(255, 255, 255, 0) !important;
     }
   }
+}
+
+div[class*="nameDefault-"],
+div[class*="nameHovered-"],
+div[class*="nameCollapsed"],
+div[class*="nameHoveredCollapsed"] {
+  font-size: 15px;
+  text-transform: none;
 }
 
 .form {
@@ -92,5 +107,23 @@
     line-height: 16px;
     padding: 10px 20px;
     position: relative;
+  }
+}
+
+
+// Modal
+.modal .modal-inner > .flex-nowrap { background: transparent; }
+.modal-content {
+  background-color: transparent;
+  .form-inner p { color: #fff; }
+}
+
+div[class*="modal-"] div[class*="header-"] {
+  background-color: var(--dark-highlight);
+
+  + div[class*="scrollerWrap-"] {
+    background-color: var(--dark-primary) !important;
+    border-radius: 0;
+    padding-top: 5px;
   }
 }
