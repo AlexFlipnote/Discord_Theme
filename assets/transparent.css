@@ -166,7 +166,7 @@ div[class*="appMount-"], div[class*="channels-"], .theme-dark .chat, .theme-dark
 }
 
 div[class*="winButton"] {
-	 margin-top: 4px;
+     margin-top: 4px;
  }
 
 div[class*="typeWindows-"] {
@@ -176,7 +176,7 @@ div[class*="typeWindows-"] {
 div[class*="titleBar-"] {
     height: 20px;
     margin-top: 0px;
-	background-color: rgba(0, 0, 0, .90);
+    background-color: rgba(0, 0, 0, .90);
 }
 
 /* Keyframes */
