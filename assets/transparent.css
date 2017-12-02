@@ -165,6 +165,20 @@ div[class*="appMount-"], div[class*="channels-"], .theme-dark .chat, .theme-dark
   background: rgba(0, 0, 0, 0.5);
 }
 
+div[class*="winButton"] {
+	 margin-top: 4px;
+ }
+
+div[class*="typeWindows-"] {
+    margin-top: 0px;
+}
+
+div[class*="titleBar-"] {
+    height: 20px;
+    margin-top: 0px;
+	background-color: rgba(0, 0, 0, .90);
+}
+
 /* Keyframes */
 @keyframes opacity {
   0% { opacity: 1; }
