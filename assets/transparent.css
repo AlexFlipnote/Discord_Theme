@@ -13,7 +13,8 @@
 .channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
 .chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text,
 .chat form .typing, .theme-dark .chat .private-channel-call,
-.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers {
+.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers, 
+.theme-dark div[class*="headerBar-"], .theme-light div[class*="headerBar-"] {
   background: transparent!important;
   box-shadow: none;
   border-bottom: 0px solid #fff;
