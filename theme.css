@@ -3026,4 +3026,24 @@ div[class*="side-"] div[class*="item-"]:hover {
   background-color: var(--dark-secondary);
   color: var(--light-primary); }
 
+.theme-dark .screenshare-popout {
+  background-color: var(--dark-primary); }
+.theme-dark .screenshare-popout .ui-quick-select-popout-option:hover {
+  background-color: var(--dark-secondary); }
+.theme-dark .content-2Jeco_ {
+  background-color: var(--dark-primary); }
+.theme-dark .content-2Jeco_ .marginBottom20-2Ifj-2 {
+  background-color: var(--dark-highlight); }
+.theme-light .screenshare-popout {
+  background-color: var(--light-secondary); }
+.theme-light .screenshare-popout .ui-quick-select-popout-option:hover {
+  background-color: var(--light-primary); }
+.theme-light .content-2Jeco_ .marginBottom20-2Ifj-2,
+.theme-light .content-2Jeco_ .marginBottom20-2Ifj-2>* {
+  background-color: var(--light-highlight); }
+.theme-light .content-2Jeco_ .marginBottom20-2Ifj-2 .titleStack-1gbL5h,
+.theme-light .content-2Jeco_ .marginBottom20-2Ifj-2 .titleWrap-1JyZ0i  {
+  color: var(--dark-highlight); }
+
+
 /*# sourceMappingURL=theme.css.map */
