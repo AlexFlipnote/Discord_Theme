@@ -2343,11 +2343,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-<<<<<<< Updated upstream
       content: ' ­ƒÄÇ'; }
-=======
-      content: ' ≡ƒÄÇ'; }
->>>>>>> Stashed changes
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
@@ -2630,12 +2626,11 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] div[class*="bgScale-
   top: 0;
   z-index: -1; }
 
-<<<<<<< Updated upstream
 .theme-dark .screenshare-popout {
   background-color: var(--dark-primary); }
   .theme-dark .screenshare-popout .ui-quick-select-popout-option:hover {
     background-color: var(--dark-secondary); }
-=======
+
 .attachButton-Di6YUh.popout-open {
   background-color: var(--dark-highlight) !important;
   padding: 16px 13px 14px 10px;
