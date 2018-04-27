@@ -228,6 +228,18 @@ div[class*="autocomplete-"] {
     top: -27px;
     width: auto;
   }
+
+  div[class*="activityInviteEducation-2W00Kk"] {
+    transform: translate(-18px, 1px);
+    border-radius-top-left: 5px;
+    border-radius-top-right: 5px;
+
+    div[class*="activityInviteEducationArrow-2YqVm7"] {
+      transform: rotateX(180deg) translateY(-6px);
+    }
+  }
+
+  
 }
 
 .theme-dark #autocomplete-popout {
