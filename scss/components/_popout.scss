@@ -96,6 +96,18 @@ div[class*="userPopout-"] {
   }
 }
 
+form[class*="everyonePopout-"] {
+  margin-bottom: -3px;
+  background-color: var(--dark-highlight) !important;
+  box-shadow: 0 0 20px 0 var(--dark-highlight) !important;
+  border-radius: 0;
+  margin-left: 10px;
+
+  div[class*="footer-"] {
+    background-color: var(--dark-highlight) !important;
+  }
+}
+
 div[class*="avatarStatusNormal-"] { border: 0; }
 
 .note textarea:focus { background: var(--dark-highlight); }
