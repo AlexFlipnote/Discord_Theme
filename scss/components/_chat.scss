@@ -428,11 +428,15 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
 // Friends section
 div[class*='privateChannels-'] {
-  div[class*='channel-'] {
-    a[href="/activity"]:hover::before { content: 'Activity'; }
-    a[href*="/library"]:hover::before { content: 'Library'; }
-    a[href*="/store"]:hover::before { content: 'Store'; }
-    a[href="/channels/@me"]:hover::before { content: 'Friends';	left: -10px !important; }
+  overflow-x: visible;
+
+  div[class*='scroller-'] {
+    overflow-x: visible;
+    padding-right: 8px;
+
+    &::-webkit-scrollbar {
+      display: none!important;
+    }
   }
 
   @for $i from 1 through 5 {
@@ -443,7 +447,7 @@ div[class*='privateChannels-'] {
       width: 25%;
 
       a[href="/activity"], a[href*="/library"], a[href*="/store"], a[href="/channels/@me"] {
-        &:hover::before {
+        &:hover div[class*='name'] {
           @include animation(tooltip-bottom-anim 200ms ease-in-out);
           background-color: #000;
           border-radius: 5px;
@@ -453,7 +457,6 @@ div[class*='privateChannels-'] {
           display: block;
           font-size: 14px;
           font-weight: 500;
-          left: 3px;
           line-height: 16px;
           max-width: 190px;
           padding: 8px 12px;
