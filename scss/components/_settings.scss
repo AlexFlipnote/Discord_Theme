@@ -440,9 +440,8 @@ div[class*="noticeRegion-"] {
   div[class*="container-"] {
     @include transition(all 200s ease-in-out);
     background: var(--dark-highlight) !important;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     box-shadow: none;
-    margin-bottom: -48px;
 
     // On screen shake
     [style="background-color: rgba(240, 71, 71, 0.9);"] {
