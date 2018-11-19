@@ -1,3 +1,5 @@
+div[class*="base-"], div[class*="guildsWrapper-"] { border-radius: 0; }
+
 // Title Section
 .theme-dark .chat .title-wrap {
   background-color: var(--dark-highlight);
@@ -350,7 +352,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   border-radius: 0;
   margin-bottom: 0;
   padding-bottom: 4px;
-  padding-top: 5px;
+  padding-top: 4px;
 
   button[class*="emojiButton"] {
     top: 15px;

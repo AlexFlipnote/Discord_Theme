@@ -1,11 +1,18 @@
 .theme-dark, .theme-light {
+  div[class*="userSettingsAccount-"]::after, .need-help-modal .footer::before {
+    content: 'Theme version: 1.2.0.9';
+  }
+
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.2.0.9';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
     top: 2.1em;
+  }
+
+  .need-help-modal .footer::before {
+    font-size: 14px;
   }
 }
 

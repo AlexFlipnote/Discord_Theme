@@ -57,7 +57,7 @@ div[class*="appMount-"] { background: transparent; }
 
     div[class*="contentRegion-"] {
       background: transparent;
-      div[class*="scroller-"] { background: var(--transparent-primary); }
+      div[class*="scroller-"] { background: var(--transparent-secondary); }
     }
   }
 
@@ -96,15 +96,15 @@ div[class*="appMount-"] { background: transparent; }
 
   // Game store stuff
   div[class*="gameLibrary-"] {
-    background: var(--transparent-secondary);
+    background: transparent;
     div[class*="gameUpdates-"] { background: var(--transparent-primary); }
-    div[class*="header-"] { background: var(--transparent-secondary); }
+    div[class*="header-"] { background: transparent; }
     button[class*="actionButton"] { background: var(--transparent-highlight); }
     div[class*="rowWrapperActive-"] { background-color: var(--transparent-primary); }
   }
 
   div[class*="applicationStore-"] {
-    background: var(--transparent-secondary);
+    background: transparent;
 
     div[class*="tileWrapper-"] {
       background: var(--transparent-primary);
@@ -112,6 +112,8 @@ div[class*="appMount-"] { background: transparent; }
     }
 
     div[class*="searchBox-"] { background: var(--transparent-primary); }
+
+    svg[name="ArrowLeft"] { margin-top: 3px; }
   }
   // END: Game store stuff
 }
@@ -123,7 +125,7 @@ div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
   background: var(--transparent-secondary);
 }
 
-div[class*="titleWrapper-"] div[class*="title-"] {
+div[class*="titleWrapper-"] div[class*="headerBar-"] {
   background: var(--transparent-secondary);
 
   div[class*="title-"] { background: transparent; }
@@ -134,8 +136,8 @@ div[class*="titleWrapper-"] div[class*="title-"] {
 div[class*="emptyStateLarge-"] { background: var(--transparent-secondary); }
 
 div[class*="homeWrapper-"] {
-  div[class*="home-"] { background: var(--transparent-secondary); }
-  footer[class*="footer-"] { background-color: var(--transparent-secondary); }
+  div[class*="home-"] { background: transparent; }
+  footer[class*="footer-"] { background-color: transparent; }
 
   div[class*="tileWrapper-"] {
     background: var(--transparent-primary);
@@ -145,7 +147,7 @@ div[class*="homeWrapper-"] {
 }
 
 div[class*="listing-"] {
-  background: var(--transparent-secondary);
+  background: transparent;
 
   div[class*="row-"] { background: transparent; }
 
