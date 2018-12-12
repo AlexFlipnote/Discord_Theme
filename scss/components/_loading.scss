@@ -1,20 +1,20 @@
-.app a, .connecting a {
-  color: var(--accent);
-}
-
-.connecting {
+.app + div[class*="fixClipping"] {
   background: var(--dark-highlight);
 
-  img, video, video.ready { visibility: hidden; }
-  .quote { visibility: hidden; }
-  .attribution { visibility: hidden; }
+  video[class^="ready-"], div[class^="quote-"] {
+    display: none;
+  }
 
-  &.attribution, &.connection-status, &.quote {
+  div[class^="status-"] {
     @include animation(pulse 1.5s infinite);
     color: #fff;
     font-size: 40px;
     margin-bottom: -122px;
     text-align: center;
     text-transform: none;
+  }
+
+  div[class^="problems-"] a {
+    color: var(--accent);
   }
 }
