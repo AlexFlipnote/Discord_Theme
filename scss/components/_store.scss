@@ -35,6 +35,7 @@ div[class*="listing-"] {
   }
 }
 
+.theme-dark div[class*="libraryHeader-"] { background: var(--dark-secondary); }
 .theme-dark div[class*="gameLibrary-"] {
   background: var(--dark-secondary);
 
@@ -62,4 +63,8 @@ div[class*="listing-"] {
   div[class*="applicationTile-"] { background: var(--dark-primary); }
 
   div[class*="searchBox-"] { background: var(--dark-primary); }
+}
+
+.theme-dark div[class^="codeRedemption-"] button {
+  background: var(--accent);
 }

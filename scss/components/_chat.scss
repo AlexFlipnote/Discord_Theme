@@ -373,7 +373,6 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   padding-top: 4px;
 
   button[class*="emojiButton"] {
-    top: 0;
     &:hover { background: transparent; }
   }
 }
@@ -403,10 +402,6 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
 
 // Account information
-.theme-dark #rtc-connection-popout hr { // scss-lint:disable MergeableSelector
-  border-color: var(--dark-primary);
-}
-
 .account {
   .btn { background: none; }
   .btn-group { border: 0; }
@@ -431,19 +426,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   .btn-settings:hover::after, .account .btn-settings::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_24px.svg'); }
 }
 
-#rtc-connection {
-  .btn::after { background-size: 23px 23px; }
-  .btn-disconnect::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg'); }
-  .btn-info::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg'); }
-  .btn, .btn-group, .btn-disconnect {
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-}
-
-
-// Friends section
+// Friends section (needs optimization: makes settings panel laggy - Sometimes not laggy (like when in Gift Inventory)
 div[class*='privateChannels-'] {
   overflow-x: visible;
 
@@ -470,14 +453,13 @@ div[class*='privateChannels-'] {
         top: 0;
       }
 
-      a[href="/activity"], a[href*="/library"], a[href*="/store"], a[href="/channels/@me"] {
-        &:hover div[class*='name'] {
+      a[href="/activity"], a[href="/library"], a[href="/store"], a[href="/channels/@me"] {
+        &:hover div[class^='name'] {
           @include animation(tooltip-bottom-anim 200ms ease-in-out);
           background-color: #000;
           border-radius: 5px;
           box-shadow: 0 0 5px rgba(0, 0, 0, .9);
           color: #fff;
-          contain: layout;
           display: block;
           font-size: 14px;
           font-weight: 500;
@@ -497,6 +479,7 @@ div[class*='privateChannels-'] {
   }
 
 }
+// END (needs optimization)
 
 .theme-dark div[class*="videoHeight-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-highlight);
@@ -590,7 +573,6 @@ div[class*='privateChannels-'] {
     border: 0;
   }
 }
-
 
 .theme-dark div[class*="activityFeed-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-secondary);
@@ -741,7 +723,6 @@ div[class*="container-"] {
 
 .theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
   div[class*="members-"] { background-color: var(--dark-secondary); }
-  div[class*="content"] { background-color: var(--dark-secondary); }
 
   div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }

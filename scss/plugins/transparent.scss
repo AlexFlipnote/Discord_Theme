@@ -94,7 +94,16 @@ div[class*="appMount-"] { background: transparent; }
     background: rgba(250, 166, 26, .1) !important;
   }
 
-  // Game store stuff
+  div[class^="root-"] {
+    background-color: transparent;
+
+    div[class*="scrollerWrap-"] {
+      background-color: transparent;
+    }
+  }
+
+  // Game store
+  div[class*="libraryHeader-"] { background: var(--transparent-secondary); }
   div[class*="gameLibrary-"] {
     background: transparent;
     div[class*="gameUpdates-"] { background: var(--transparent-primary); }

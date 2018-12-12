@@ -9,13 +9,20 @@
 }
 /* Settings */
 .app { background: rgba(0, 0, 0, 0.75); }
-body {
+#app-mount {
   background: url("https://i.alexflipnote.xyz/1f9a3d.jpg");
   /* Advanced settings */
   background-size: cover; background-attachment: fixed;
   background-position: center; background-repeat: no-repeat;
 }
 ```
+
+### Powercord Support
+[Click here to know more](https://github.com/Aetheryx/powercord)
+```css
+@import "https://discordtheme.alexflipnote.xyz/plugins/powercord.css";
+```
+
 
 ### DiscordInjections Support
 [Click here to know more](https://github.com/DiscordInjections/Plugins)

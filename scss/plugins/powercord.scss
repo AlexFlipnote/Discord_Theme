@@ -1,0 +1,67 @@
+// Spotify modal
+.powercord-spotify {
+  z-index: 2 !important;
+}
+
+// Overlay
+div[class*="overlay-"] {
+  // Channel
+  div[class*="guildWidgetSidebar-"] {
+    background: var(--dark-primary);
+
+    div[class*="header-"] {
+      background-color: var(--dark-primary) !important;
+      border-radius: 0;
+      box-shadow: 0 2px 0 rgba(#000, .2), 0 3px 0 rgba(#000, .06);
+    }
+
+    div[class*="wrapperDefault-"] > svg path {
+      display: none;
+    }
+  }
+
+  // Messages + textarea
+  div[class^="contained-"] {
+    background-color: var(--dark-secondary) !important;
+
+    div[class^="headerDefault-"] {
+      background-color: var(--dark-secondary) !important;
+      border-radius: 0;
+      box-shadow: 0 2px 0 rgba(#000, .2), 0 3px 0 rgba(#000, .06) !important;
+      position: relative;
+      z-index: 2;
+    }
+
+    div[class*="footer-"] {
+      border-top: 1px solid hsla(0, 0%, 100%, .06);
+      padding: 0;
+      position: relative;
+
+      div[class^="autocomplete"] div[class*="content-"] {
+        background: transparent;
+      }
+    }
+
+    div[class^="typingWrapper-"] {
+      position: absolute;
+      top: 0;
+      transform: translateY(-100%);
+
+      div[class^="typing"] {
+        background-color: var(--dark-secondary) !important;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  // Popouts
+  + div + div[class*="popouts-"] div[class^="modal-"] {
+    div[class*="wrapper-"] {
+      border: 2px solid var(--accent) !important;
+    }
+
+    label[class*="selected-"] {
+      background: var(--accent) !important;
+    }
+  }
+}

@@ -1,12 +1,25 @@
 // Emotes: https://material.io/icons/
 
-.ui-text-input .input:focus { border-color: var(--accent) !important; }
-.ui-switch-checkbox:checked+.ui-switch { background: var(--accent); }
-.guild-settings-modal-emoji .no-emoji p { color: #808080; }
+.ui-text-input .input:focus {
+  border-color: var(--accent) !important;
+}
+
+.ui-switch-checkbox:checked + .ui-switch {
+  background: var(--accent);
+}
+
+.guild-settings-modal-emoji .no-emoji p {
+  color: #808080;
+}
 
 .user-settings-games {
-  .now-playing-add .link:hover { color: var(--accent); }
-  div[class*="contents-"] { color: var(--accent); }
+  .now-playing-add .link:hover {
+    color: var(--accent);
+  }
+
+  div[class*="contents-"] {
+    color: var(--accent);
+  }
 }
 
 div[class*="standardSidebarView-"] {
@@ -14,12 +27,18 @@ div[class*="standardSidebarView-"] {
     max-width: 100%;
   }
 
-  div[class*="footer-"] { background: transparent; }
+  div[class*="footer-"] {
+    background: transparent;
+  }
 
-  div[class*="sidebarRegion-"] { flex: 1 0 0; }
+  div[class*="sidebarRegion-"] {
+    flex: 1 0 0;
+  }
 }
 
-.ui-sidebar-scrollable+.ui-content { max-width: 100%; }
+.ui-sidebar-scrollable + .ui-content {
+  max-width: 100%;
+}
 
 .ui-tab-bar.SIDE .ui-tab-bar-item {
   &::before {
@@ -77,7 +96,9 @@ div[class*="standardSidebarView-"] {
   .btn.green {
     background-color: var(--accent);
 
-    &:hover { background-color: var(--accent); }
+    &:hover {
+      background-color: var(--accent);
+    }
   }
 }
 
@@ -86,15 +107,23 @@ div[class*="paymentHistory-"] {
     background: transparent;
   }
 
-  div[class*="hoverablePayment-"]:hover { background: var(--dark-secondary); }
-  div[class*="expandedInfo-"] { background: var(--dark-secondary); }
+  div[class*="hoverablePayment-"]:hover {
+    background: var(--dark-secondary);
+  }
+
+  div[class*="expandedInfo-"] {
+    background: var(--dark-secondary);
+  }
 }
 
 .theme-dark {
-  div[class*="user-info-viewing cardPrimary-"] { background: transparent; border-color: transparent; }
+  div[class*="user-info-viewing cardPrimary-"] {
+    background: transparent;
+    border-color: transparent;
+  }
+
   div[class*="cardPrimary-"] {
     background: transparent;
-    background-color: transparent;
     border-color: transparent;
   }
 
@@ -104,18 +133,43 @@ div[class*="paymentHistory-"] {
   }
 
   div[class*="standardSidebarView-"] {
-    div[class*="sidebarRegion-"], div[class*="sidebarRegion-"] div[class*="scroller-"] { background-color: var(--dark-highlight); }
-    div[class*="contentRegion-"], div[class*="contentRegion-"] div[class*="scroller-"] { background-color: var(--dark-primary); }
+    div[class*="sidebarRegion-"], div[class*="sidebarRegion-"] div[class*="scroller-"] {
+      background-color: var(--dark-highlight);
+    }
+
+    div[class*="contentRegion-"], div[class*="contentRegion-"] div[class*="scroller-"] {
+      background-color: var(--dark-primary);
+    }
   }
 
-  .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: var(--accent); }
+  .ui-tab-bar.SIDE .ui-tab-bar-item.brand {
+    color: var(--accent);
+  }
 }
 
 div[role="progressbar"] {
-  circle[class*="foreground-"] { stroke: var(--accent); }
+  circle[class*="foreground-"] {
+    stroke: var(--accent);
+  }
+}
+
+div[class^="userSettingsVoice-"] {
+  div[class^="progress-"] {
+    background-color: var(--dark-secondary) !important;
+  }
+
+  div[class^="notches-"] {
+    background: transparent;
+    border: 1px var(--dark-highlight) solid;
+  }
 }
 
 div[class*="notificationSettings-"] {
-  div[class*="wrapper-"] { border: 2px solid var(--accent); }
-  label[class*="selected-"] { background: var(--accent); }
+  div[class*="wrapper-"] {
+    border: 2px solid var(--accent);
+  }
+
+  label[class*="selected-"] {
+    background: var(--accent);
+  }
 }
