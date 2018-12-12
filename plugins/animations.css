@@ -1,2 +1,1 @@
 @keyframes fadein-message{0%{opacity:0;transform:translateX(-50px)}100%{opacity:1;transform:translateX(0)}}.messages.scroller .message-group .message{animation:fadein-message .4s forwards}.messages.scroller .message-group .message .message-sending{animation:none;opacity:0}.messages.scroller .message-group-blocked .message-group .message{animation:none !important}
-/*# sourceMappingURL=animations.css.map */
