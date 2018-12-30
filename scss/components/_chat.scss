@@ -10,7 +10,7 @@ div[class*="base-"], div[class*="guildsWrapper-"] { border-radius: 0; }
 .chat>.title-wrap {
   background-color: var(--light-primary);
   border: 0;
-  box-shadow: 0;
+  box-shadow: none;
 }
 
 
@@ -197,7 +197,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 }
 
 .channel-textarea-inner {
-  .channel-textarea-upload { border-right-color: none; }
+  .channel-textarea-upload { border-right-color: transparent }
   textarea { background-color: transparent; &::-webkit-input-placeholder { color: rgba(128, 128, 128, .9) !important; }}
 }
 
@@ -236,9 +236,8 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 
 div[class*="autocomplete-"] {
   border: 0 !important;
-  border-bottom: 0;
   border-radius: 0;
-  box-shadow: 0;
+  box-shadow: none;
 
   div[class*="content-"] { background: transparent; }
 
@@ -793,7 +792,7 @@ div[class*="channels-"] {
 
   div[class*="titleWrapper-"] { z-index: 1; }
 
-  div[class*="justifyStart-"] & div[class*="container-"] {
+  div[class*="justifyStart"] & div[class*="container-"] {
     background: transparent;
     z-index: 1;
   }

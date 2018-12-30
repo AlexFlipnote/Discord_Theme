@@ -1,34 +1,59 @@
-/* User Profile popout */
+// User Profile popout
 .user-popout .header {
-  width: 450px !important;
   height: 20px !important;
-}
-.avatar-popout { z-index: 0; }
-.header .username-wrapper { z-index: 5; }
-.user-popout .avatar-wrapper .avatar-hint { z-index: 10; }
-.user-popout .avatar-wrapper .avatar-popout { z-index: 11; }
-
-.avatar-popout .status {
-  z-index:-1 !important;
-  border-radius:3px !important;
-  width:450px !important;
-  height:75px !important;
-  top:-11px !important;
-  left:-30px !important;
-  opacity: 0.4;
+  width: 450px !important;
 }
 
+.avatar-popout {
+  z-index: 0;
 
-/* User Profile full size */
-#user-profile-modal .header .header-info { z-index: 5; }
-#user-profile-modal .avatar-wrapper { z-index: 10; }
-#user-profile-modal .header { z-index: 11; background: rgba(0, 0, 0, 0.5); }
-#user-profile-modal .avatar-wrapper .status {
-  width: 650px;
-  height: 200px;
-  border-color: transparent;
-  bottom: -15px;
-  right: -380px;
-  border-radius: 0;
-  z-index: -1;
+  .status {
+    border-radius: 3px !important;
+    height: 75px !important;
+    left: -30px !important;
+    opacity: .4;
+    top: -11px !important;
+    width: 450px !important;
+    z-index: -1 !important;
+  }
+}
+
+.header .username-wrapper {
+  z-index: 5;
+}
+
+.user-popout .avatar-wrapper .avatar-hint {
+  z-index: 10;
+}
+
+.user-popout .avatar-wrapper .avatar-popout {
+  z-index: 11;
+}
+
+
+// User Profile full size
+#user-profile-modal {
+  .header {
+    background: rgba(0, 0, 0, .5);
+    z-index: 11;
+
+    .header-info {
+      z-index: 5;
+    }
+  }
+
+  .avatar-wrapper {
+    z-index: 10;
+
+    .status {
+      border-color: transparent;
+      border-radius: 0;
+      bottom: -15px;
+      height: 200px;
+      right: -380px;
+      width: 650px;
+      z-index: -1;
+    }
+
+  }
 }

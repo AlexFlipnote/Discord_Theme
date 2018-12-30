@@ -122,7 +122,7 @@ div[class*="paymentHistory-"] {
     border-color: transparent;
   }
 
-  div[class*="cardPrimary-"] {
+  div[class*="cardPrimary-"], div[class*="card-"]::before {
     background: transparent;
     border-color: transparent;
   }
@@ -158,9 +158,14 @@ div[class^="userSettingsVoice-"] {
     background-color: var(--dark-secondary) !important;
   }
 
+  button[class^="micTestButton-"] + div[class^="wrapper-"] {
+    height: 22px;
+  }
+
   div[class^="notches-"] {
-    background: transparent;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23303030'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
     border: 1px var(--dark-highlight) solid;
+    height: 22px;
   }
 }
 

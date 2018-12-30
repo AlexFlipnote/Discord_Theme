@@ -1,83 +1,137 @@
-/* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
+// DiscordInjections Plugin Support / Ask me if you want your plugin supported too!
 
-/* DiscordInjections Main CSS */
+// DiscordInjections Main CSS
 
-.theme-dark .ellipsis-1MzbWB.primary400-1OkqpL.di-autocomplete-commandinfo { background-color: transparent !important; }
+.theme-dark .ellipsis-1MzbWB.primary400-1OkqpL.di-autocomplete-commandinfo {
+  background-color: transparent !important;
+}
 
-/* Snazzah - DiscordBots */
-.activity.db-prefix { color:#fff; }
-.with-background .headerText-3tKBWq,.with-background .activityUserPopout-1nmgaw{background-color:rgba(0,0,0,0.4)!important;}
-.with-background .headerInfo-Gkqcz9:after { background-color: rgba(0,0,0,0.4)!important; }
-.with-background .body-UB0LrI {background:transparent!important;}
+// Snazzah - DiscordBots
+.activity.db-prefix {
+  color: #fff;
+}
 
-/* Snazzah - Citador */
-.quote-msg .message-group{margin-bottom:0px!important;}
-.theme-dark .quote-msg{background-color:var(--dark-primary);border-top:1px solid rgba(255,255,255,0.25);}
-.theme-dark .quote-msg+.innerEnabled-gLHeOL{border-top:1px solid rgba(255,255,255,0.1)!important;}
-.theme-light .quote-msg{background-color:var(--light-primary);}
+.with-background .headerText-3tKBWq, .with-background .activityUserPopout-1nmgaw {
+  background-color: rgba(0, 0, 0, .4) !important;
+}
 
-/* Snazzah - DiscordCardsDashboard */
-.theme-dark .dc-user-options,.theme-dark .dc-inv{background:var(--dark-primary);}
-.dc-user-options,.dc-inv{-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.16);box-shadow:inset 0 1px 3px rgba(0,0,0,.16);}
-.theme-dark .dc-flex .message-group-blocked-btn{background:var(--dark-primary);color:#ccc;transition:all 250ms ease;border:0;box-shadow:transparent;}
-.theme-dark .dc-flex .message-group-blocked:hover{-webkit-box-shadow:0 1px 3px rgba(0,0,0,.16);box-shadow:0 1px 3px rgba(0,0,0,.16);}
+.with-background .headerInfo-Gkqcz9::after {
+  background-color: rgba(0, 0, 0, .4) !important;
+}
 
-/* Snazzah - DiscodInjections CommandHandler */
-.theme-dark .channel-text-area-default .di-autocomplete-commandinfo {background:transparent!important;}
+.with-background .body-UB0LrI {
+  background: transparent !important;
+}
 
-/* Snazzah - BetterFormattingRedux */
-.bf-toolbar:before{background:var(--dark-highlight)!important;}
+// Snazzah - Citador
+.quote-msg .message-group {
+  margin-bottom: 0 !important;
+}
 
-/* Snazzah - LineStickers */
+.theme-dark .quote-msg {
+  background-color: var(--dark-primary);
+  border-top: 1px solid rgba(255, 255, 255, .25);
+
+  + .innerEnabled-gLHeOL {
+    border-top: 1px solid rgba(255, 255, 255, .1) !important;
+  }
+}
+
+.theme-light .quote-msg {
+  background-color: var(--light-primary);
+}
+
+// Snazzah - DiscordCardsDashboard
+.theme-dark .dc-user-options, .theme-dark .dc-inv {
+  background: var(--dark-primary);
+}
+
+.dc-user-options, .dc-inv {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .16);
+}
+
+.theme-dark .dc-flex .message-group-blocked-btn {
+  background: var(--dark-primary);
+  border: 0;
+  box-shadow: transparent;
+  color: #ccc;
+  transition: all 250ms ease;
+}
+
+.theme-dark .dc-flex .message-group-blocked:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+}
+
+// Snazzah - DiscodInjections CommandHandler
+.theme-dark .channel-text-area-default .di-autocomplete-commandinfo {
+  background: transparent !important;
+}
+
+// Snazzah - BetterFormattingRedux
+.bf-toolbar::before {
+  background: var(--dark-highlight) !important;
+}
+
+// Snazzah - LineStickers
 .theme-dark #bda-qem-line-container, .theme-dark #bda-qem-line-container .preview-container .preview-wrapper {
-    background-color: var(--dark-primary)!important;
-    border-color: var(--dark-highlight)!important;
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-highlight) !important;
 }
+
 .theme-dark #bda-qem-line-container .emote-container:hover {
-    background-color: var(--dark-secondary)!important;
-    border-color: var(--dark-secondary)!important;
+  background-color: var(--dark-secondary) !important;
+  border-color: var(--dark-secondary) !important;
 }
+
 .theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar,
 .theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-track,
 .theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-track-piece {
-    background-color: var(--dark-primary) !important;
-    border-color: var(--dark-primary) !important;
-}
-.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-thumb {
-    border-color: var(--dark-highlight) !important;
-    background-color: var(--dark-highlight) !important;
-}
-.theme-dark #bda-qem-line-container .add-pack {
-    opacity: 0.2 !important;
-    filter: invert(1);
-}
-.theme-dark #bda-qem-line-container .item:hover .add-pack {
-    opacity: 0.5 !important;
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-primary) !important;
 }
 
-/* Snazzah - TelegramStickers */
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-thumb {
+  background-color: var(--dark-highlight) !important;
+  border-color: var(--dark-highlight) !important;
+}
+
+.theme-dark #bda-qem-line-container .add-pack {
+  filter: invert(1);
+  opacity: .2 !important;
+}
+
+.theme-dark #bda-qem-line-container .item:hover .add-pack {
+  opacity: .5 !important;
+}
+
+// Snazzah - TelegramStickers
 .theme-dark #bda-qem-telegram-container, .theme-dark #bda-qem-telegram-container .preview-container .preview-wrapper {
-    background-color: var(--dark-primary)!important;
-    border-color: var(--dark-highlight)!important;
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-highlight) !important;
 }
+
 .theme-dark #bda-qem-telegram-container .emote-container:hover {
-    background-color: var(--dark-secondary)!important;
-    border-color: var(--dark-secondary)!important;
+  background-color: var(--dark-secondary) !important;
+  border-color: var(--dark-secondary) !important;
 }
+
 .theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar,
 .theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar-track,
 .theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar-track-piece {
-    background-color: var(--dark-primary) !important;
-    border-color: var(--dark-primary) !important;
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-primary) !important;
 }
+
 .theme-dark #bda-qem-telegram-container .scroller::-webkit-scrollbar-thumb {
-    border-color: var(--dark-highlight) !important;
-    background-color: var(--dark-highlight) !important;
+  background-color: var(--dark-highlight) !important;
+  border-color: var(--dark-highlight) !important;
 }
+
 .theme-dark #bda-qem-telegram-container .add-pack {
-    opacity: 0.2 !important;
-    filter: invert(1);
+  filter: invert(1);
+  opacity: .2 !important;
 }
+
 .theme-dark #bda-qem-telegram-container .item:hover .add-pack {
-    opacity: 0.5 !important;
+  opacity: .5 !important;
 }

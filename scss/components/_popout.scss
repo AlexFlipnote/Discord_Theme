@@ -31,11 +31,25 @@ div[class*="userPopout-"] {
   div[class*="bodyAlignCenter-"], div[class*="bodyNormal-"] { background: transparent; border-bottom: 0; }
 
   div[class*="footer-"] {
-    background: var(--dark-secondary);
+    border: 0;
+    padding: 0;
+
+    div[class^="protip-"] {
+      display: none;
+    }
+
+    div[class^="wumpusWrapper-"] {
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      top: -18px;
+    }
 
     input[class*="quickMessage-"] {
-      background-color: transparent;
+      background-color: var(--dark-secondary);
       border: 0;
+      margin: 10px;
     }
   }
 
@@ -502,7 +516,7 @@ div[class*="popoutTopLeft-"], div[class*="popoutBottom-"] {
 
 .option-popout .btn-item:hover { background: var(--dark-secondary); color: #fff; }
 
-.theme-darkdiv[class*="contextMenu-"] .item-group { border-color: rgba(255, 255, 255, .03) !important; }
+.theme-dark div[class*="contextMenu-"] .item-group { border-color: rgba(255, 255, 255, .03) !important; }
 div[class*="contextMenu-"], div[class*="contextMenu-"] div[class*="contextMenu-"] { @include animation(sub-contextmenu-anim 200ms ease-in-out); }
 
 div[class*="contextMenu-"] {
@@ -525,7 +539,6 @@ div[class*="contextMenu-"] {
     &:hover {
       background: rgba(225, 225, 225, .03) !important;
       color: rgba(255, 255, 255, .8);
-      left: .4em;
       padding-left: 22px;
       transition: all 250ms ease;
     }
@@ -539,6 +552,10 @@ div[class*="contextMenu-"] {
   div[class*="item-"]:first-of-type { border-radius: 2px 2px 0 0; }
   div[class*="item-"]:last-of-type { border-radius: 0 0 2px 2px; }
 
+  div[class*="itemSubMenu-"] {
+    position: relative;
+  }
+
   div[class*="itemSubMenu-"]:hover::after { opacity: .75; }
   div[class*="itemSubMenu-"]::after {
     @include transform(translateY(-4px));
@@ -549,6 +566,7 @@ div[class*="contextMenu-"] {
     opacity: .5;
     position: absolute;
     right: 5px;
+    top: 9px;
     width: 24px;
     z-index: 1001;
   }
@@ -673,7 +691,7 @@ div[class*="backdrop-"] + div[class*="modal-"] {
 
   input[class*="input-"] {
     background: var(--dark-secondary);
-    box-shadow: 0;
+    box-shadow: none;
   }
 }
 

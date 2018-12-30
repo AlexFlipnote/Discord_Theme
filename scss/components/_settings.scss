@@ -1,5 +1,6 @@
 // Server settings
 // NOTE: Clean this shit!!!1
+// also NOTE: components/_settings.scss:404:1 [W] MergeableSelector: Merge rule `.theme-dark` with rule on line 7
 
 .ui-audit-log .title-time-wrap { background: transparent; }
 .dark-elevation-border-high, .theme-dark .elevation-border-high { background-color: var(--dark-highlight); }
@@ -52,7 +53,7 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
   background: transparent;
 }
 
-div[class*="side-"] {
+div[class*="side"] {
   div[class*="itemSelected-"] { background-color: var(--accent); }
   div[class*="item-"] {
     transition: all 200ms ease;
@@ -71,7 +72,7 @@ div[class*="side-"] {
 .theme-dark div[class*="slider-"] div[class*="barFill-"] { background-color: var(--accent); }
 
 div[class*="standardSidebarView-"] {
-  button[class*="lookFilled-"], div[class*="valueChecked-"] { background-color: var(--accent); }
+  button[class*="lookFilled"], div[class*="valueChecked"] { background-color: var(--accent); }
 
   div[class*="itemDefaultSelected-"] {
     background: var(--accent);
@@ -99,6 +100,10 @@ div[class*="standardSidebarView-"] {
 }
 
 .theme-dark div[class*="cardPrimaryEditable-"] {
+  background: var(--dark-highlight);
+  border-radius: 5px;
+  transition: all 350ms ease;
+
   &[style*="background-color: rgb(114, 137, 218);"] {
     background-color: var(--accent) !important;
     border-color: transparent !important;
@@ -109,12 +114,6 @@ div[class*="standardSidebarView-"] {
     border-color: transparent !important;
     polyline { stroke: var(--accent) !important; }
   }
-}
-
-.theme-dark div[class*="cardPrimaryEditable-"] {
-  background: var(--dark-highlight);
-  border-radius: 5px;
-  transition: all 350ms ease;
 }
 
 .notification-settings-modal .notification-settings-modal-channel-settings-header,

@@ -61,14 +61,6 @@ code {
   padding: .5em;
 }
 
-.hljs-emphasis {
-  font-style: italic !important;
-}
-
-.hljs-strong {
-  font-weight: bold !important;
-}
-
 // HLJS Actual Colors
 // Keyword
 .hljs-keyword {
@@ -76,109 +68,110 @@ code {
   font-weight: bold !important;
 }
 
-/* Builtins */
+// Builtins
 .hljs-built_in {
   color: var(--code-builtin) !important;
 }
 
-/* Literal */
-.hljs-literal{
+// Literal
+.hljs-literal {
   color: var(--code-literal) !important;
 }
 
-/* Number */
-.hljs-number{
-    color: var(--code-number) !important;
+// Number
+.hljs-number {
+  color: var(--code-number) !important;
 }
 
-/* Regex */
+// Regex
 .hljs-regexp {
   color: var(--code-regexp) !important;
 }
 
-/* String */
+// String
 .hljs-string {
   color: var(--code-string) !important;
 }
 
-/* Subst */
+// Subst
 .hljs-subst {
   color: var(--code-subst) !important;
   font-weight: bold !important;
 }
 
-/* Symbol */
+// Symbol
 .hljs-symbol {
   color: var(--code-symbol) !important;
 }
 
-/* Class */
-.hljs-class{
+// Class
+.hljs-class {
   color: var(--code-class) !important;
 }
 
 .hljs-title {
-    color: var(--code-title) !important;
+  color: var(--code-title) !important;
 }
 
-/* Function */
-.hljs-function{
+// Function
+.hljs-function {
   color: var(--code-function) !important;
 }
 
-/* Params */
+// Params
 .hljs-params {
   color: var(--code-params) !important;
 }
 
-/* Comment */
-.hljs-comment{
+// Comment
+.hljs-comment {
   color: var(--code-comment) !important;
   font-style: italic !important;
 }
 
-/* Doctag */
+// Doctag
 .hljs-doctag {
   color: var(--code-doctag) !important;
   font-style: italic !important;
 }
 
-/* Meta Keyword */
+// Meta Keyword
 .hljs-meta-keyword {
   color: var(--code-meta-keyword) !important;
   font-style: italic !important;
 }
 
-/* Meta String */
+// Meta String
 .hljs-meta-string {
   color: var(--code-meta-string) !important;
   font-style: italic !important;
 }
 
-/* Template Tag */
+// Template Tag
 .hljs-template-tag {
   color: var(--code-temp-tag) !important;
   font-style: italic !important;
 }
 
-/* Template Variable */
+// Template Variable
 .hljs-template-variable {
   color: var(--code-temp-var) !important;
   font-style: italic !important;
 }
 
-/* Meta */
+// Meta
 .hljs-meta {
   color: var(--code-meta) !important;
   font-style: italic !important;
 }
-/* Tag */
+
+// Tag
 .hljs-tag {
   color: var(--code-tag) !important;
 }
 
-/* Name Of Tag */
-.hljs-name{
+// Name Of Tag
+.hljs-name {
   color: var(--code-name) !important;
 }
 
@@ -186,102 +179,102 @@ code {
   color: var(--code-builtin-name) !important;
 }
 
-/* Attr */
-.hljs-attr{
+// Attr
+.hljs-attr {
   color: var(--code-attr) !important;
 }
 
-/* Variable */
+// Variable
 .hljs-variable {
   color: var(--code-variable) !important;
 }
 
-/* HLJS Markup */
-/* Bullets */
-.hljs-bullet{
+// HLJS Markup
+// Bullets
+.hljs-bullet {
   color: var(--code-bullet) !important;
   font-weight: bold !important;
 }
 
-/* Type */
+// Type
 .hljs-type {
   color: var(--code-type) !important;
   font-weight: bold !important;
 }
 
-/* Code */
+// Code
 .hljs-code {
   color: var(--code-code) !important;
 }
 
-/* Emphasis */
+// Emphasis
 .hljs-emphasis {
-  font-style: italic !important;
   color: var(--code-emphasis) !important;
+  font-style: italic !important;
 }
 
-/* Strong */
+// Strong
 .hljs-strong {
   font-weight: bold !important;
 }
 
-/* Formula */
+// Formula
 
-/* Link */
+// Link
 .hljs-link {
   color: var(--code-link) !important;
 }
 
-/* Section */
+// Section
 .hljs-section {
   color: var(--code-section) !important;
   font-weight: bold !important;
 }
 
-/* Quote */
+// Quote
 .hljs-quote {
   color: var(--code-quote) !important;
 }
 
-/* HLJS CSS */
+// HLJS CSS
 
-/* Tag Selector */
+// Tag Selector
 .hljs-selector-tag {
   color: var(--code-sel-tag) !important;
 }
 
-/* ID Selector */
+// ID Selector
 .hljs-selector-id {
   color: var(--code-sel-id) !important;
   font-weight: bold !important;
 }
 
-/* Attribute */
+// Attribute
 .hljs-attribute {
   color: var(--code-attribute) !important;
 }
 
-/* Psuedo Selector */
+// Psuedo Selector
 .hljs-selector-pseudo {
   color: var(--code-sel-pseudo) !important;
 }
 
-/* Class Selector */
+// Class Selector
 .hljs-selector-class {
   color: var(--code-sel-class) !important;
 }
 
-/* Attr Selector */
+// Attr Selector
 .hljs-selector-attr {
   color: var(--code-sel-attr) !important;
 }
 
-/* Diff Addition */
+// Diff Addition
 .hljs-addition {
   color: var(--code-diff-add) !important;
 }
 
-/* Diff Deletion */
+// Diff Deletion
 .hljs-deletion {
   color: var(--code-diff-del) !important;
 }

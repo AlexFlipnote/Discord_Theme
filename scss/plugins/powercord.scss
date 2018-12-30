@@ -3,6 +3,15 @@
   z-index: 2 !important;
 }
 
+// Powercord update
+.powercord-toast {
+  background-color: var(--dark-primary) !important;
+
+  .button {
+    background-color: var(--dark-secondary) !important;
+  }
+}
+
 // Overlay
 div[class*="overlay-"] {
   // Channel
