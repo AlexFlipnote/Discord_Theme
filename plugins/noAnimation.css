@@ -1,1 +1,1 @@
-div[class*="container-"] div[class*="containerDefault-"] div[class*="content-"]:hover{transform:translateX(0)}
+div[class*=container-] div[class*=containerDefault-] div[class*=content-]:hover{transform:translateX(0)}
