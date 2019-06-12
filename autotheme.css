@@ -1,23 +1,24 @@
 /* This will automatically update your theme to the latest release */
 @import "https://discordtheme.alexflipnote.dev/theme.css";
+/*
+
+/*
+  How to add plugins? :D
+  1. Just add any @import from either my PLUGINS.md file or find some other @import stuff
+  2. Add them under this comment (above root)
+  3. Enjoy some fun stuff :P
+*/
 
 :root {
   --accent: #7a78bd;
   --dark-highlight: #181818;
   --dark-primary: #212121;
   --dark-secondary: #303030;
-  --discord-logo: 1;
+  --discord-logo: 1; /* change this to 0 to remove the discord logo+ the stripe */
   --light-dark-text: #2e3136;
   --light-highlight: #9e9e9e;
   --light-primary: #ddd;
   --light-secondary: #ecf0f1;
   --notif: #7a78bd;
-  --theme-logo: 1;
+  --theme-logo: 1; /* change this to 0 to remove the theme text+version*/
 }
-
-/*
-  How to add plugins :D
-  1. Just add any @import from either my PLUGINS.md file or find some other @import stuff
-  2. Add them under this comment
-  3. Enjoy some fun stuff :P
-*/
