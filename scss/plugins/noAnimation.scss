@@ -14,3 +14,7 @@ div[class*="container-"] div[class*="containerDefault-"][class*="selected-"] {
 div[class*="privateChannels-"] div[class*="channel-"][style*="height: 42px;"] a:hover {
   padding-left: 8px !important;
 }
+
+div[class*="popoutBottom-"] div[class*="menu-"] div[class*="item-"]:hover{
+  transform: translateX(0) !important;
+}
