@@ -1,11 +1,20 @@
-div[class*="container-"] div[class*="containerDefault-"] {
+div[class*="container-"] div[class*="containerDefault-"],
+div[class*="container-"] div[class*="containerDefault-"][class*="selected-"] {
   div[class*="content-"]:hover {
-    padding-left: 8px;
+    padding-left: 8px !important;
   }
 }
 
 .theme-dark div[class*="membersWrap-"] {
   div[class*="memberOnline-"], div[class*="memberOffline-"] {
-    div[class*="content-"]:hover { transform: translateX(0); }
+    div[class*="content-"]:hover { transform: translateX(0) !important; }
   }
+}
+
+div[class*="privateChannels-"] div[class*="channel-"][style*="height: 42px;"] a:hover {
+  padding-left: 8px !important;
+}
+
+div[class*="popoutBottom-"] div[class*="menu-"] div[class*="item-"]:hover{
+  transform: translateX(0) !important;
 }
