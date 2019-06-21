@@ -1,4 +1,12 @@
-//META{"name":"AlexFlipnote/Discord_Theme","description":"🎨 A discord theme that changes your CSS style","author":"AlexFlipnote","version":"BD 1.0", "source":"https://github.com/AlexFlipnote/Discord_Theme", "website":"https://discord.gg/DpxkY3x"}*//{}
+/**
+ * @name         AlexFlipnote/Discord_Theme
+ * @description  🎨 A discord theme that changes your CSS style
+ * @author       AlexFlipnote
+ * @version      1.0-bd
+ * @source       https://github.com/AlexFlipnote/Discord_Theme
+ * @website      https://discord.gg/DpxkY3x
+ */
+
   /* This will automatically update your theme to the latest release, do not remove it and keep it at top */
   @import "https://discordtheme.alexflipnote.dev/theme.css";
 
