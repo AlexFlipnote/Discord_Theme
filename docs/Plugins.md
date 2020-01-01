@@ -1,3 +1,12 @@
+### Custom selection color
+[Click here for preview](https://media.discordapp.net/attachments/651020737540259844/662065401596739604/wGuNo5UtIDDegAAAABJRU5ErkJggg.png)
+```css
+::selection {
+  background-color: #32ff32; /* This is the background color, can either be hex or just the color name, you can get the hex by going to https://www.w3schools.com/colors/colors_picker.asp */
+  color: #fff; /* This is the foreground color, can either be hex or just the color name, you can get the hex by going to https://www.w3schools.com/colors/colors_picker.asp */
+}
+```
+
 ### Discord Background
 [Click here for preview](https://i.alexflipnote.dev/4J2VYpq.png)
 ```css
